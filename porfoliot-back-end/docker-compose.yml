@@ -1,0 +1,34 @@
+version: '3.4'
+services:
+  myapp:
+    container_name: ts-node-docker-starter
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - PORT=3000
+    ports:
+      - "3000:3000"
+    command: npm run --tsc start:dev
+    volumes:
+      - ./:/app
+      - /app/node_modules
+
+  mysql_db:
+   image: mysql:latest
+   command: --default-authentication-plugin=mysql_native_password
+   # Variables d'environnement pour la base de données
+   environment:
+     MYSQL_ROOT_PASSWORD: root
+     MYSQL_DATABASE: porfoliot
+     MYSQL_USER: myuser
+     MYSQL_PASSWORD: mypassword
+   volumes:
+     - "./db:/docker-entrypoint-initdb.d"
+  phpmyadmin:
+   image: phpmyadmin:latest
+   ports:
+     - "8001:80"
+   environment:
+     - PMA_ARBITRARY=1

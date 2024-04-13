@@ -23,12 +23,12 @@ services:
      MYSQL_ROOT_PASSWORD: root
      MYSQL_DATABASE: porfoliot
      MYSQL_USER: myuser
-     MYSQL_PASSWORD: mypassword
+     MYSQL_PASSWORD: root
    volumes:
      - "./db:/docker-entrypoint-initdb.d"
   phpmyadmin:
    image: phpmyadmin:latest
    ports:
-     - "8001:80"
+     - "3306:80"
    environment:
      - PMA_ARBITRARY=1

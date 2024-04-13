@@ -1,0 +1,9 @@
+
+  "main": "tailwind.config.js",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "scripts": {
+    "build":"npx tailwindcss -i css/style.css -o ./dist/style.css --watch"
+  }
+}

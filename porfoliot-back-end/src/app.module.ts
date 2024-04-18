@@ -1,9 +1,12 @@
+/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ProjetModule } from './projet/projet.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Projet } from './projet/entities/projet.entity'; // Assurez-vous que l'import est correct
+import { TechnologiesModule } from './technologies/technologies.module';
+import { Technology } from './technologies/entities/technology.entity';
 
 @Module({
   imports: [
@@ -14,11 +17,12 @@ import { Projet } from './projet/entities/projet.entity'; // Assurez-vous que l'
       username: 'root',
       password: 'root',
       database: 'porfoliot',
-      entities: [Projet],
-      synchronize: true,
-      autoLoadEntities: true
+      entities: [Projet,Technology],
+      autoLoadEntities: true,
     }),
+    
     ProjetModule,
+    TechnologiesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

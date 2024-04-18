@@ -19,8 +19,8 @@ export class ProjetController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.projetService.findOne(+id);
+  findOne(@Param('id') id: number) {
+    return this.projetService.findOne(id);
   }
 
   @Patch(':id')

@@ -23,7 +23,7 @@ export class ProjetService {
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} projet`;
+   return this.projetRepository.findOne({where: {id_projet: id}});
   }
 
   update(id: number, updateProjetDto: UpdateProjetDto) {

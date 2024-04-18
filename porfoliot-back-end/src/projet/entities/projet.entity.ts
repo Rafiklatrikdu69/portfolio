@@ -1,5 +1,6 @@
 /* eslint-disable */
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Technology } from 'src/technologies/entities/technology.entity';
+import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
 
 @Entity()
 export class Projet  {
@@ -16,4 +17,10 @@ export class Projet  {
   date: Date;
   @Column()
   image : string;
+
+  @OneToMany(() => Technology, (techno: Technology) => techno.id_techno, {
+    onDelete: 'CASCADE',
+    onUpdate: 'CASCADE',
+  })
+  technos: Array<Technology>;
 }

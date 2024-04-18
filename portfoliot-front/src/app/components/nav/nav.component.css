@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: #295cca;
+    justify-content: space-around;
+    padding: 10px;
+    row-gap: 10%;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 100px;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }

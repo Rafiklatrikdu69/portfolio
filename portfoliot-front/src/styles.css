@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Virgil";
+  
+    font-style: normal;
+  
+    font-weight: 400;
+  
+    font-display: swap;
+  
+    src: url(Virgil.woff2) format('woff2');
+  }
+
+*{
+    font-family: "Virgil";
+}
+body{
+    margin: 0;
+}

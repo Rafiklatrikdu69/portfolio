@@ -1,0 +1,33 @@
+.propos  p{
+    width: 50%;
+    border-style: dashed;
+    border-radius: 10px;
+    padding: 15px;
+}
+.propos p {
+    transition: box-shadow 0.3s ease; /* Transition douce sur l'ombre */
+}
+
+.propos p:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+
+#section{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+
+}
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-left: 40%;
+      
+}
+#section .propos {
+    margin-left: 20%;
+}

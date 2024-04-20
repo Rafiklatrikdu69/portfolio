@@ -42,7 +42,7 @@ CREATE TABLE `projet` (
 --
 
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`) VALUES
-(1, 'value-2]', '[value-3]', '0000-00-00 00:00:00', '');
+(1, 'Sportify', '[value-3]', '0000-00-00 00:00:00', '');
 
 -- --------------------------------------------------------
 
@@ -61,7 +61,14 @@ CREATE TABLE `projet_techno` (
 
 INSERT INTO `projet_techno` (`projet_id`, `techno_id`) VALUES
 (1, 1);
-
+INSERT INTO `projet_techno` (`projet_id`, `techno_id`) VALUES
+(1, 10);
+INSERT INTO `projet_techno` (`projet_id`, `techno_id`) VALUES
+(1, 11);
+INSERT INTO `projet_techno` (`projet_id`, `techno_id`) VALUES
+(1, 13);
+INSERT INTO `projet_techno` (`projet_id`, `techno_id`) VALUES
+(1, 14);
 -- --------------------------------------------------------
 
 --
@@ -79,7 +86,33 @@ CREATE TABLE `technology` (
 --
 
 INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
-(1, 'jdjf', 'jasdd');
+(1, 'PHP', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(2, 'Laravel', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(3, 'Symfony', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(4, 'Angular', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(5, 'AngularJS', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(6, 'NestJS', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(7, 'C#', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(8, 'TypeScript', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(9, 'HTML', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(10, 'JS', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(11, 'CSS', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(12, 'VueJS', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(13, 'Docker', '');
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`) VALUES
+(14, 'AWS', '');
 
 --
 -- Index pour les tables déchargées

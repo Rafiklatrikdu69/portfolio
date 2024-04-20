@@ -7,7 +7,6 @@ import { ProjetsComponent } from './components/projets/projets.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ApiProjetService } from './services/api-projet.service';
 import { HomeComponent } from './components/home/home.component';
-import {TypewriterModule} from '@typewriterjs/typewriterjs-angular';
 import Typewriter from 't-writer.js'
 @Component({
   selector: 'app-root',

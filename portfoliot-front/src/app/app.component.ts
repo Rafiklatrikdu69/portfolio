@@ -6,14 +6,14 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjetsComponent } from './components/projets/projets.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ApiProjetService } from './services/api-projet.service';
-import { BrowserModule } from '@angular/platform-browser';
-
-
+import { HomeComponent } from './components/home/home.component';
+import {TypewriterModule} from '@typewriterjs/typewriterjs-angular';
+import Typewriter from 't-writer.js'
 @Component({
   selector: 'app-root',
   standalone: true,
   providers: [ApiProjetService],
-  imports: [HttpClientModule, RouterOutlet,NavComponent,AboutComponent,ProjetsComponent,CommonModule],
+  imports: [HttpClientModule, RouterOutlet,NavComponent,AboutComponent,ProjetsComponent,HomeComponent,CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

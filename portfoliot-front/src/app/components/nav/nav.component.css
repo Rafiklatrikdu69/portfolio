@@ -3,18 +3,18 @@ nav{
     flex-direction: row;
     width: 100%;
     justify-content: flex-end;
-    background-color: #295cca;
     justify-content: space-around;
-    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     row-gap: 10%;
     align-items: center;
+    height: 70px;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-
+  padding: 10px;
   }
   
   li {
@@ -31,5 +31,6 @@ ul {
   }
   
   li a:hover {
-    background-color: #111;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
   }

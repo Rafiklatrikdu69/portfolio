@@ -5,6 +5,7 @@
     padding: 15px;
 }
 .propos p {
+    font-size: 18px;
     transition: box-shadow 0.3s ease; /* Transition douce sur l'ombre */
 }
 
@@ -19,6 +20,8 @@
     display: flex;
     flex-direction: row;
   align-items: center;
+  width: 100%;
+  height: 100vh;
 
 }
 img{

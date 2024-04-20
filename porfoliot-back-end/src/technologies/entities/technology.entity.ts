@@ -1,6 +1,7 @@
 /* eslint-disable */
+import { Categorie } from 'src/categorie/entities/categorie.entity';
 import { Projet } from '../../projet/entities/projet.entity';
-import { Entity, Column, PrimaryGeneratedColumn, ManyToMany, JoinTable } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, ManyToMany, JoinTable, ManyToOne, JoinColumn } from 'typeorm';
 
 @Entity()
 export class Technology {
@@ -20,4 +21,7 @@ export class Technology {
     inverseJoinColumn: { name: 'projet_id', referencedColumnName: 'id_projet' } 
   })
   projets: Projet[];
+  @ManyToOne(() => Categorie, (categorie: Categorie) => categorie.technos)
+
+  categorie: Categorie;
 }

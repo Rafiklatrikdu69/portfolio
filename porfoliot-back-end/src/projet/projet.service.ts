@@ -20,9 +20,7 @@ export class ProjetService {
   findAll() {
     // @ts-ignore
     return this.projetRepository.find({
-      relations:{
-        technos:true
-      }
+      relations: ['technos', 'technos.categorie']
     })
   }
 

@@ -7,6 +7,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Projet } from './projet/entities/projet.entity'; // Assurez-vous que l'import est correct
 import { TechnologiesModule } from './technologies/technologies.module';
 import { Technology } from './technologies/entities/technology.entity';
+import { CategorieModule } from './categorie/categorie.module';
+import { Categorie } from './categorie/entities/categorie.entity';
 
 @Module({
   imports: [
@@ -17,13 +19,14 @@ import { Technology } from './technologies/entities/technology.entity';
       username: 'root',
       password: 'root',
       database: 'porfoliot',
-      entities: [Technology,Projet],
+      entities: [Technology,Projet,Categorie],
       autoLoadEntities: true,
-      // synchronize:true
+      synchronize:true
     }),
     
     ProjetModule,
     TechnologiesModule,
+    CategorieModule,
   ],
   controllers: [AppController],
   providers: [AppService],

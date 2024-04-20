@@ -14,7 +14,7 @@ export class HomeComponent {
   presentation: string = 'Bonjour';
   isInitialized: boolean = false;
 
-  constructor(private router:Router) {}
+  constructor() {}
 scroll(){
   const currentPosition = window.pageYOffset;
   window.scrollTo({

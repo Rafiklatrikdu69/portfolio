@@ -19,7 +19,11 @@ export class ProjetService {
 
   findAll() {
     // @ts-ignore
-    return this.projetRepository.find({})
+    return this.projetRepository.find({
+      relations:{
+        technos:true
+      }
+    })
   }
 
   findOne(id: number) {

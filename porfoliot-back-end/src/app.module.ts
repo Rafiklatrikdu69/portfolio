@@ -17,8 +17,9 @@ import { Technology } from './technologies/entities/technology.entity';
       username: 'root',
       password: 'root',
       database: 'porfoliot',
-      entities: [Projet,Technology],
+      entities: [Technology,Projet],
       autoLoadEntities: true,
+      // synchronize:true
     }),
     
     ProjetModule,

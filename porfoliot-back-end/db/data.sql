@@ -66,15 +66,21 @@ CREATE TABLE `projet` (
 --
 
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(1, 'Sportify', 'Sportify est réseau social permettant de pronostiquer sur des matchs et aussi publier des posts liés au sport.', '2024-04-20 12:29:06', 'sportify.png','');
+(1, 'Sportify', 'Sportify est un réseau social permettant de pronostiquer sur des matchs et aussi publier des posts liés au sport.', '2024-04-20 12:29:06', 'sportify.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(2, 'YourFood', 'YourFood est site web permettant de commander des menus via une interface accessible par tous le monde.', '2024-04-20 12:29:06', 'yourfood.png','');
+(2, 'YourFood', 'YourFood est un site web permettant de commander des menus via une interface accessible par tous le monde.', '2024-04-20 12:29:06', 'yourfood.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
 (3, 'TurboTap', 'TurboTap est une application de click rapide permettant de tester la rapidité des joueurs', '2024-04-20 12:29:06', 'turbo.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
 (4, 'BourseApp', 'BourseApp est une application boursière qui affiche sous forme de graphe des données liés à la crypto-monnaie.', '2024-04-20 12:29:06', 'bourse.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(5, 'Nas''Info', 'Nas''Info est site web qui affiche les articles que la Nasa publie régulierement.', '2024-04-20 12:29:06', 'nasa.png','');
+(5, 'Nas''Info', 'Nas''Info est un site web qui affiche les articles que la Nasa publie régulierement.', '2024-04-20 12:29:06', 'nasa.png','');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
+(6, 'Porfoliot', 'Mon Porfoliot résume pourquoi j''ai décider de me lancer dans l''informatique.', '2024-04-20 12:29:06', 'porfoliot.png','');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
+(7, 'ShopLink', 'ShopLink est un site web permettant de commander des produits frais que l''on retrouve dans les plus grands magazins.', '2024-04-20 12:29:06', 'shoplink.png','');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
+(8, 'GrapMap', 'GrapMap est une application permettant aux dispensaires d''hopital de trouver le meilleur pour accompagner patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'grapmap.png','');
 
 
 
@@ -145,6 +151,18 @@ INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieI
 (11, 'CSS', 'css.png', 1);
 INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
 (12, 'SCSS', 'scss.png', 1);
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(13, 'GCP', 'google.png', 2);
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(14, 'C', 'c.png', 3);
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(15, 'C++', 'c++.png', 3);
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(16, 'C#', 'csharp.png', 1);
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(17, 'Linux', 'linux.png', 2);
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(18, 'VueJS', 'vue.png', 1);
 
 --
 -- Index pour les tables déchargées

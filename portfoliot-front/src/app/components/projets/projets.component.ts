@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiProjetService } from '../../services/api-projet.service';
 import { Projet } from '../../entity/projet';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-projets',
   standalone:true,
-  providers:[],
+  imports:[CommonModule],
   templateUrl: './projets.component.html',
   styleUrls: ['./projets.component.css']
 })

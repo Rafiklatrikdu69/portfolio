@@ -5,6 +5,7 @@
     width: 100%;
     height: 100vh;
     font-size: 50px;
+   
  
 }
 #scroll-to-about {
@@ -16,7 +17,7 @@
     text-decoration: none;
   }
   .arrow {
-    border: solid white;
+    border: solid black;
     border-width: 0 10px 10px 0; /* Augmentez la taille des bordures pour agrandir la flèche */
     display: inline-block;
     padding: 20px; 

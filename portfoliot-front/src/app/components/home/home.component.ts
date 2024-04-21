@@ -29,7 +29,7 @@ ngOnInit(): void {
     loop: true,
     typeSpeed: 80,
     deleteSpeed: 80,
-    typeColor: 'white'
+    typeColor: 'black'
   })
   
   writer

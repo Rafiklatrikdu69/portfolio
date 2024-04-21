@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs';
 import { Projet } from '../entity/projet';
+import { Technology } from '../entity/Technology';
 
 @Injectable({
   providedIn: 'root'
@@ -16,4 +17,5 @@ export class ApiProjetService {
    public getAllProjets(){
     return this.http.get<Projet[]>(this.url + 'projet/get', { withCredentials: true });
    }
+
 }

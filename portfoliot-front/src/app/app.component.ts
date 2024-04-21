@@ -8,11 +8,13 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ApiProjetService } from './services/api-projet.service';
 import { HomeComponent } from './components/home/home.component';
 import Typewriter from 't-writer.js'
+import { TechnologiesComponent } from './components/technologies/technologies.component';
+import { ApitechnosService } from './services/apitechnos.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  providers: [ApiProjetService],
-  imports: [HttpClientModule, RouterOutlet,NavComponent,AboutComponent,ProjetsComponent,HomeComponent,CommonModule],
+  providers: [ApiProjetService,ApitechnosService],
+  imports: [HttpClientModule, RouterOutlet,CommonModule,NavComponent,AboutComponent,ProjetsComponent,HomeComponent,TechnologiesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

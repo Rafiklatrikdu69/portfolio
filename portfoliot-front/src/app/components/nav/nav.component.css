@@ -5,9 +5,11 @@ nav{
     justify-content: flex-end;
     justify-content: space-around;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    row-gap: 10%;
     align-items: center;
     height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 ul {
     list-style-type: none;

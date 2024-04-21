@@ -1,27 +1,39 @@
 section{
     width: 100%;
     height: 100vh;
+    text-align: center;
+
+  
+}
+h1{
+    font-size: 30px;
+    text-decoration: underline;
 }
 #cat-techno{
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding-bottom: 10px;
     width: 100%;
     height: auto;
     gap: 40px;
+    
       
 
 }
 #card-technos{
+    /* width: 100%; */
 display: flex;
 flex-direction: row;
     color: black;
 gap: 30px;
 flex-wrap: wrap;
 padding: 10px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+border-radius: 10px;
 
+align-items: center;
 
 }
 .techno{

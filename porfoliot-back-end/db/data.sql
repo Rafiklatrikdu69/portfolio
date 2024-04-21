@@ -44,6 +44,8 @@ INSERT INTO `categorie` (`id_cat`, `nom_cat`) VALUES
 (2, 'Utils');
 INSERT INTO `categorie` (`id_cat`, `nom_cat`) VALUES
 (3, 'Programmation');
+INSERT INTO `categorie` (`id_cat`, `nom_cat`) VALUES
+(4, 'Base de données');
 
 
 -- --------------------------------------------------------
@@ -163,6 +165,14 @@ INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieI
 (17, 'Linux', 'linux.png', 2);
 INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
 (18, 'VueJS', 'vue.png', 1);
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(19, 'Kotlin', 'kotlin.png', 3);
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(20, 'SQL', 'sql.png', 4);
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(21, 'SQLite', 'sqlite.png', 4);
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(22, 'MongoDB', 'mongo.png', 4);
 
 --
 -- Index pour les tables déchargées

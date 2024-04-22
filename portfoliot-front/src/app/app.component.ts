@@ -10,11 +10,12 @@ import { HomeComponent } from './components/home/home.component';
 import Typewriter from 't-writer.js'
 import { TechnologiesComponent } from './components/technologies/technologies.component';
 import { ApitechnosService } from './services/apitechnos.service';
+import { CompetenceComponent } from './components/competence/competence.component';
 @Component({
   selector: 'app-root',
   standalone: true,
   providers: [ApiProjetService,ApitechnosService],
-  imports: [HttpClientModule, RouterOutlet,CommonModule,NavComponent,AboutComponent,ProjetsComponent,HomeComponent,TechnologiesComponent],
+  imports: [HttpClientModule, RouterOutlet,CommonModule,NavComponent,AboutComponent,ProjetsComponent,HomeComponent,TechnologiesComponent,CompetenceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

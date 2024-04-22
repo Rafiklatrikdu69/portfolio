@@ -23,10 +23,10 @@ import { Categorie } from './categorie/entities/categorie.entity';
       autoLoadEntities: true,
       synchronize:true
     }),
-    
+
     ProjetModule,
     TechnologiesModule,
-    CategorieModule,
+    CategorieModule
   ],
   controllers: [AppController],
   providers: [AppService],

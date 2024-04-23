@@ -1,20 +1,35 @@
 section{
     width: 100%;
     height: 100vh;
-    padding-top: 20%;
+    padding-top: calc(120vh);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 60px;
 }
-
+h1{
+  font-size: 30px;
+  text-decoration: underline;
+}
 
 input, ul.submenu {
     display: none;
   }
   input, ul.submenu2 {
+    display: none;
+  }
+  input, ul.submenu3 {
+    display: none;
+  }
+  input, ul.submenu4 {
+    display: none;
+  }
+  input, ul.submenu5 {
+    display: none;
+  }
+  input, ul.submenu6 {
     display: none;
   }
   a{
@@ -39,6 +54,7 @@ input, ul.submenu {
     border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     padding: 30px;
+    width: 500px;
   }
   
   /*show the submenu when input is checked*/
@@ -49,6 +65,30 @@ input, ul.submenu {
     padding: 30px;
   }
   input:checked~ul.submenu2 {
+    display: block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  input:checked~ul.submenu3 {
+    display: block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  input:checked~ul.submenu4 {
+    display: block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  input:checked~ul.submenu5 {
+    display: block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 30px;
+  }
+  input:checked~ul.submenu6 {
     display: block;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     border-radius: 10px;

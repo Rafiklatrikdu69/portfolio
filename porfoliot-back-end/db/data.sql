@@ -82,7 +82,7 @@ INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
 (7, 'ShopLink', 'ShopLink est un site web permettant de commander des produits frais que l''on retrouve dans les plus grands magazins.', '2024-04-20 12:29:06', 'shoplink.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(8, 'GrapMap', 'GrapMap est une application permettant aux dispensaires d''hopital de trouver le meilleur pour accompagner patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'grapmap.png','');
+(8, 'GraphMap', 'GraphMap est une application permettant aux dispensaires d''hopital de trouver le meilleur pour accompagner patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'grapmap.png','');
 
 
 

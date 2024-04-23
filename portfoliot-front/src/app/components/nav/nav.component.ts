@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -8,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-
+  scroll(){
+    const currentPosition = window.pageYOffset;
+    window.scrollTo({
+      top: currentPosition + window.innerHeight,
+      behavior: 'smooth' 
+  });
+  }
+  
+  
 }

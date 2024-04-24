@@ -99,3 +99,13 @@ input, ul.submenu {
     flex-direction: column;
     gap: 0px;
   }
+
+
+  @media screen and (max-width: 900px) {
+    label{
+      width: 200px;
+    }
+    ul{
+      width: 200px;
+    }
+   }

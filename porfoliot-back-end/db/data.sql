@@ -39,9 +39,9 @@ CREATE TABLE `categorie` (
 --
 
 INSERT INTO `categorie` (`id_cat`, `nom_cat`) VALUES
-(1, 'Web');
+(1, 'Développement');
 INSERT INTO `categorie` (`id_cat`, `nom_cat`) VALUES
-(2, 'Utils');
+(2, 'Outils');
 INSERT INTO `categorie` (`id_cat`, `nom_cat`) VALUES
 (3, 'Programmation');
 INSERT INTO `categorie` (`id_cat`, `nom_cat`) VALUES
@@ -100,7 +100,7 @@ CREATE TABLE `projet_techno` (
 --
 -- Déchargement des données de la table `projet_techno`
 --
-
+-- projet 1
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (1, 1);
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
@@ -111,6 +111,49 @@ INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (10, 1);
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (11, 1);
+-- projet 2
+
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(11, 2);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(10, 2);
+
+-- projet 3
+
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(2, 3);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(16, 3);
+
+-- projet 4
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(2, 4);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(3, 4);
+-- projet 5 
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(2, 5);
+
+-- projet 6
+
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(2, 6);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(3, 6);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(4, 6);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(13, 6);
+
+-- projet 7
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(2, 7);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(6, 7);
+
+-- projet 8 
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(23, 8);
 
 -- --------------------------------------------------------
 
@@ -143,8 +186,7 @@ INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieI
 (6, 'Symfony', 'symfony.png', 1);
 INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
 (7, 'Laravel', 'laravel.png', 1);
-INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
-(8, 'Java', 'java.png', 3);
+
 INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
 (9, 'JavaScript', 'js.png', 1);
 INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
@@ -173,6 +215,9 @@ INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieI
 (21, 'SQLite', 'sqlite.png', 4);
 INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
 (22, 'MongoDB', 'mongo.png', 4);
+
+INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieIdCat`) VALUES
+(23, 'Java', 'java.png', 3);
 
 --
 -- Index pour les tables déchargées

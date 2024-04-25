@@ -68,21 +68,21 @@ CREATE TABLE `projet` (
 --
 
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(1, 'Sportify', 'Sportify est un réseau social permettant de pronostiquer sur des matchs et aussi publier des posts liés au sport.', '2024-04-20 12:29:06', 'sportify.png','');
+(1, 'Sportify', 'Sportify est une plateforme sociale qui offre aux utilisateurs la possibilité de pronostiquer sur des matchs sportifs tout en leur permettant de publier et de partager du contenu.', '2024-04-20 12:29:06', 'sportify.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(2, 'YourFood', 'YourFood est un site web permettant de commander des menus via une interface accessible par tous le monde.', '2024-04-20 12:29:06', 'yourfood.png','');
+(2, 'YourFood', 'YourFood est une plateforme conviviale permettant à chacun de commander des repas via une interface simple et accessible à tous.', '2024-04-20 12:29:06', 'yourfood.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(3, 'TurboTap', 'TurboTap est une application de click rapide permettant de tester la rapidité des joueurs', '2024-04-20 12:29:06', 'turbo.png','');
+(3, 'TurboTap', 'TurboTap propose une application de clic rapide pour évaluer la vitesse des joueurs, offrant ainsi un moyen ludique d''améliorer les réflexes et la coordination.', '2024-04-20 12:29:06', 'turbo.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
 (4, 'BourseApp', 'BourseApp est une application boursière qui affiche sous forme de graphe des données liés à la crypto-monnaie.', '2024-04-20 12:29:06', 'bourse.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
 (5, 'Nas''Info', 'Nas''Info est un site web qui affiche les articles que la Nasa publie régulierement.', '2024-04-20 12:29:06', 'nasa.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(6, 'Porfoliot', 'Mon Porfoliot résume pourquoi j''ai décider de me lancer dans l''informatique.', '2024-04-20 12:29:06', 'porfoliot.png','');
+(6, 'Porfoliot', 'Mon portfolio détaille les raisons ayant motivé mon choix de carrière dans le domaine de l''informatique, illustrant mes passions et mes objectifs professionnels.', '2024-04-20 12:29:06', 'porfoliot.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
 (7, 'ShopLink', 'ShopLink est un site web permettant de commander des produits frais que l''on retrouve dans les plus grands magazins.', '2024-04-20 12:29:06', 'shoplink.png','');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(8, 'GraphMap', 'GraphMap est une application permettant aux dispensaires d''hopital de trouver le meilleur pour accompagner patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'grapmap.png','');
+(8, 'GraphMap', 'GraphMap est une application permettant aux dispensaires d''hopital de trouver le meilleur trajet pour accompagner les patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'graphmap.png','');
 
 
 

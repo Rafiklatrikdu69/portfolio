@@ -7,10 +7,10 @@ import { ProjetsComponent } from './components/projets/projets.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ApiProjetService } from './services/api-projet.service';
 import { HomeComponent } from './components/home/home.component';
-import Typewriter from 't-writer.js'
 import { TechnologiesComponent } from './components/technologies/technologies.component';
 import { ApitechnosService } from './services/apitechnos.service';
 import { CompetenceComponent } from './components/competence/competence.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,

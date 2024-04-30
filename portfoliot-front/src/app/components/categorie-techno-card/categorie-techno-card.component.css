@@ -1,0 +1,33 @@
+
+#card-technos{
+    /* width: 100%; */
+display: flex;
+flex-direction: row;
+    color: black;
+gap: 30px;
+flex-wrap: wrap;
+padding: 10px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+border-radius: 10px;
+
+align-items: center;
+
+}
+.techno{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 2px 16px;
+    height: 120px;
+    width: 100px;
+    border-radius: 10px;
+}
+.techno:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+  }
+  img{
+    width: 60px;
+    height: 54px;
+    border-radius: 10px;
+  }

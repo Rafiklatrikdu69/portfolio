@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { Projet } from '../entity/projet';
 import { Technology } from '../entity/Technology';
 
@@ -14,7 +14,7 @@ export class ApiProjetService {
 
    }
 
-   public getAllProjets(){
+   public getAllProjets() : Observable<Projet[]>{
     return this.http.get<Projet[]>(this.url + 'projet/get', { withCredentials: true });
    }
 

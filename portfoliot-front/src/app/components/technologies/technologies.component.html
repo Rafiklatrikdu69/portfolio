@@ -1,19 +1,8 @@
 <section id="technologies">
     <h1>Mes Technologies</h1>
     <div id="cat-techno">
-        <ng-container *ngFor="let item of techno; let i = index; ">
-            <h2>{{ item.nom_cat }}</h2>
-            <div id="card-technos">
-                <div *ngFor="let tech of item.technos; let j = index; ">
-             
-                    <div class="techno">
-                        <p>{{ tech.nom_techno }}</p>
-                        <img [attr.src]="'assets/' + tech.image_techno" alt="">
-                    </div>
-                    
-                    
-                </div>
-            </div>
+        <ng-container *ngFor="let item of techno$ | async; let i = index; ">
+            <app-categorie-techno-card [item]="item"></app-categorie-techno-card>
         </ng-container>
     </div>
 </section>

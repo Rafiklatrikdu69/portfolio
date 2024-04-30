@@ -7,7 +7,4 @@ import { Component } from '@angular/core';
   templateUrl: './competence.component.html',
   styleUrl: './competence.component.css'
 })
-export class CompetenceComponent {
-
-
-}
+export class CompetenceComponent {}

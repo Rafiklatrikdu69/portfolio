@@ -1,0 +1,10 @@
+<h2>{{ item.nom_cat }}</h2>
+<div id="card-technos">
+    <div *ngFor="let tech of item.technos; let j = index; ">
+ 
+        <div class="techno">
+            <p>{{ tech.nom_techno }}</p>
+            <img [attr.src]="'assets/' + tech.image_techno" alt="">
+        </div>
+    </div>
+</div>

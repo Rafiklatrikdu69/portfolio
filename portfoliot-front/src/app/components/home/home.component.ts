@@ -1,6 +1,7 @@
-import { Component, Directive, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Route, Router } from '@angular/router';
-import Typewriter from 't-writer.js'
+import Typewriter from '../../../../node_modules/t-writer.js/dist/t-writer.js'
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -15,12 +16,12 @@ export class HomeComponent {
   isInitialized: boolean = false;
 
   constructor() {}
-scroll(){
-  const currentPosition = window.pageYOffset;
-  window.scrollTo({
-    top: currentPosition + window.innerHeight,
-    behavior: 'smooth' 
-});
+    scroll(){
+      const currentPosition = window.pageYOffset;
+      window.scrollTo({
+        top: currentPosition + window.innerHeight,
+        behavior: 'smooth' 
+    });
 }
 ngOnInit(): void {
 

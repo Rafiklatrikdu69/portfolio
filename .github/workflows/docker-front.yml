@@ -22,19 +22,3 @@ jobs:
         with:
           username: rafik1212
           password: rafik123+
-
-      - name: Build and push Frontend Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          file: ./portfoliot-front/Dockerfile
-          push: true
-          tags: rafik1212/front-porfoliot
-
-      - name: Build and push Backend Docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          file: ./porfoliot-back-end/Dockerfile
-          push: true
-          tags: rafik1212/back-porfoliot

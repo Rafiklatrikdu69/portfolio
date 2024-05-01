@@ -11,7 +11,10 @@
   }
 
 *{
-    font-family: "Virgil";
+    /* font-family: "Virgil";
+    color: black; */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
     color: black;
  
 }

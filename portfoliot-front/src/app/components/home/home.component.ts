@@ -1,11 +1,9 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { Route, Router } from '@angular/router';
 import Typewriter from '../../../../node_modules/t-writer.js/dist/t-writer.js'
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -23,32 +21,26 @@ export class HomeComponent {
         behavior: 'smooth' 
     });
 }
-ngOnInit(): void {
+  ngOnInit(): void {
 
-  const target = document.querySelector('.tw')
-  const writer = new Typewriter(target, {
-    loop: true,
-    typeSpeed: 80,
-    deleteSpeed: 80,
-    typeColor: 'black'
-  })
-  
-  writer
-    .type('Salut ,')
-    .rest(700)
-    .changeOps({ deleteSpeed: 80 })
-    .remove(7)
-    .type("Je m'appelle Rafik")
-    .rest(700)
-    .changeOps({ deleteSpeed: 20 })
-    .clear()
-    .start()
-  
-}
-  ngAfterViewInit(): void {  
+    const target = document.querySelector('.tw')
+    const writer = new Typewriter(target, {
+      loop: true,
+      typeSpeed: 80,
+      deleteSpeed: 80,
+      typeColor: 'black'
+    })
+    
+    writer
+      .type('Salut ,')
+      .rest(700)
+      .changeOps({ deleteSpeed: 80 })
+      .remove(7)
+      .type("Je m'appelle Rafik")
+      .rest(700)
+      .changeOps({ deleteSpeed: 20 })
+      .clear()
+      .start()
     
   }
-
-  
-
 }

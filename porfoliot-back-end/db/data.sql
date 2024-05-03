@@ -111,6 +111,8 @@ INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (10, 1);
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (11, 1);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(9, 1);
 -- projet 2
 
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES

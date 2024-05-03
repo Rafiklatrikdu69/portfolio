@@ -3,8 +3,8 @@
         <h2>Mes projets</h2>
     </div>
     <div class="flex-projet">
-        <ng-container *ngFor="let item of projets$ | async ; let i = index; ">
-            <app-card-projet [item]="item"></app-card-projet>
+        <ng-container *ngFor="let projet of projets$ | async ; let i = index; ">
+            <app-card-projet [projet]="projet"></app-card-projet>
         </ng-container>
     </div>
 </section>

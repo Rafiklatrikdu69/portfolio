@@ -4,7 +4,9 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule
+  ],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })

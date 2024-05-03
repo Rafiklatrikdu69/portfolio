@@ -1,19 +1,19 @@
 <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-back">
-        <img [attr.src]="'assets/' + item.image">
+        <img [attr.src]="'assets/' + projet.image">
         <p><strong> Techno(s) Utilisées :</strong> </p>
         <div class="flex-technos-back">
            
-            <div *ngFor="let technos of item.technos" >
+            <div *ngFor="let technos of projet.technos" >
                 {{technos.nom_techno}} |
             </div>
         </div>
         
       </div>
       <div class="flip-card-front">
-        <h1>  {{ item.nom_projet}}</h1>
-        <p> {{item.description}}</p>
+        <h1>  {{ projet.nom_projet}}</h1>
+        <p> {{projet.description}}</p>
      
       </div>
     </div>

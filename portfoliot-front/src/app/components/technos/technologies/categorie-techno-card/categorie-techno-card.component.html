@@ -1,6 +1,6 @@
-<h2>{{ item.nom_cat }}</h2>
+<h2>{{ categorie.nom_cat }}</h2>
 <div id="card-technos">
-    <div *ngFor="let tech of item.technos; let j = index; ">
+    <div *ngFor="let tech of categorie.technos; let j = index; ">
         <app-card-techno  [techno]="tech"></app-card-techno>
     </div>
 </div>

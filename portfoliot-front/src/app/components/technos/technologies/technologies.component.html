@@ -2,7 +2,7 @@
     <h1>Mes Technologies</h1>
     <div id="cat-techno">
         <ng-container *ngFor="let item of techno$ | async; let i = index; ">
-            <app-categorie-techno-card [item]="item"></app-categorie-techno-card>
+            <app-categorie-techno-card [categorie]="item"></app-categorie-techno-card>
         </ng-container>
     </div>
 </section>

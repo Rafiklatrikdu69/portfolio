@@ -1,11 +1,17 @@
 import { Component ,Input} from '@angular/core';
 import { ProposComponent } from './propos/propos.component';
 import { CommonModule } from '@angular/common';
+import { ImagePersoComponent } from './image-perso/image-perso.component';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule,ProposComponent],
+  imports: 
+  [
+    CommonModule,
+    ProposComponent,
+    ImagePersoComponent
+  ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })

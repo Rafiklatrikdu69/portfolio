@@ -8,6 +8,7 @@ import { CompetenceComponent } from './competences/competence/competence.compone
 import { ApitechnosService } from '../../services/apitechnos.service';
 import { ApiProjetService } from '../../services/api-projet.service';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -19,7 +20,7 @@ import { ApiProjetService } from '../../services/api-projet.service';
     ProjetsComponent,
     HomeComponent,
     TechnologiesComponent,
-    CompetenceComponent
+    CompetenceComponent,
   ],
   templateUrl: './root.component.html',
   styleUrl: './root.component.css'

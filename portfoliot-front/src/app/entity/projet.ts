@@ -7,10 +7,22 @@ export class Projet {
     id_projet: number;
     image: string;
     nom_projet: string;
-    technos:Technology[]
+    technos:Technology[];
     categorie:Categorie;
+    git:string;
+    descriptionplus:string;
 
-    constructor(date: string, description: string, id_projet: number, image: string, nom_projet: string,technos:Technology[],categorie:Categorie) {
+    constructor(
+        date: string, 
+        description: string, 
+        id_projet: number,
+        image: string, 
+        nom_projet: string,
+        technos:Technology[],
+        categorie:Categorie,
+        git:string, 
+        descriptionplus:string 
+        ) {
         this.date = date;
         this.description = description;
         this.id_projet = id_projet;
@@ -18,5 +30,7 @@ export class Projet {
         this.nom_projet = nom_projet;
         this.technos = technos;
         this.categorie = categorie;
+        this.git=git;
+        this.descriptionplus = descriptionplus;
     }
 }

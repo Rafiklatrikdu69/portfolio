@@ -7,11 +7,18 @@ import { CardProjetComponent } from '../card-projet/card-projet.component';
 import { CommonModule } from '@angular/common';
 import { CategorieTechnoCardComponent } from '../root/technos/technologies/categorie-techno-card/categorie-techno-card.component';
 import { CardTechnoComponent } from '../card-techno/card-techno.component';
+import { ButtonGitComponent } from '../button-git/button-git.component';
 
 @Component({
   selector: 'app-description-projet',
   standalone: true,
-  imports: [CommonModule,CardProjetComponent,CardTechnoComponent],
+  imports: 
+  [
+    CommonModule,
+    CardProjetComponent,
+    CardTechnoComponent,
+    ButtonGitComponent
+  ],
   templateUrl: './description-projet.component.html',
   styleUrl: './description-projet.component.css'
 })

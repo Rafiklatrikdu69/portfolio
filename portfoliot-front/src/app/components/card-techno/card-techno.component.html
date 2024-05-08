@@ -1,4 +1,4 @@
 <div class="techno">
-    <p>{{ techno.nom_techno }}</p>
-    <img [attr.src]="'assets/' + techno.image_techno" alt="">
+    <app-nom-techno [nom]="techno.nom_techno"></app-nom-techno>
+    <app-image-techno [img]="'assets/' + techno.image_techno"></app-image-techno>
 </div>

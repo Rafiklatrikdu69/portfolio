@@ -52,11 +52,7 @@
     align-items: center;
   
   }
-  img{
-    border-radius: 15px;
-    width:100%;
-    height: 180px;
-  }
+
   .flip-card-front{
     padding: 10px;
   }

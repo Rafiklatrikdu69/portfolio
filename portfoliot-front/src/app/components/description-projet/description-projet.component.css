@@ -12,3 +12,8 @@ img{
 #flex-description{
     text-align: center;
 }
+#flex-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

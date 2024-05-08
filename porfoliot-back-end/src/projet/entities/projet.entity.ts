@@ -13,12 +13,16 @@ export class Projet {
   @Column()
   description: string;
 
+
   @Column()
   date: Date;
 
   @Column()
   image: string;
-
+ @Column()
+  git: string;
+  @Column()
+  descriptionplus:string;
   @ManyToMany(() => Technology, (techno: Technology) => techno.projets)
   @JoinTable({
     name: 'projet_techno', 

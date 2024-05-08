@@ -1,20 +1,16 @@
 <div class="flip-card" (click)="navigate(projet.id_projet)">
-    <div class="flip-card-inner">
-      <div class="flip-card-back">
-        <img [attr.src]="'assets/' + projet.image">
-        <p><strong> Techno(s) Utilisées :</strong> </p>
-        <div class="flex-technos-back">
-           
-            <div *ngFor="let technos of projet.technos" >
-                {{technos.nom_techno}} |
-            </div>
-        </div>
-        
+  <div class="flip-card-inner">
+    <div class="flip-card-back">
+      <app-image-projet [img]="'assets/' + projet.image"></app-image-projet>
+      <p><strong> Techno(s) Utilisées :</strong> </p>
+      <div class="flex-technos-back">
+        <app-technos [technos]="projet.technos"></app-technos>
       </div>
-      <div class="flip-card-front">
-        <h1>  {{ projet.nom_projet}}</h1>
-        <p> {{projet.description}}</p>
-     
-      </div>
+      
     </div>
+    
+    <div class="flip-card-front">
+      <app-flip-card-front [nom]="projet.nom_projet" [description]="projet.description"></app-flip-card-front>
+    </div>
+  </div>
 </div>

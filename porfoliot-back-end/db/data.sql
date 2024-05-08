@@ -60,29 +60,30 @@ CREATE TABLE `projet` (
   `description` varchar(255) NOT NULL,
   `date` datetime NOT NULL,
   `image` varchar(255) NOT NULL,
-  `git` varchar(255) NOT NULL
+  `git` varchar(255) NOT NULL,
+  `descriptionplus` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `projet`
 --
 
-INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(1, 'Sportify', 'Sportify est une plateforme sociale qui offre aux utilisateurs la possibilité de pronostiquer sur des matchs sportifs tout en leur permettant de publier et de partager du contenu.', '2024-04-20 12:29:06', 'sportify.png','');
-INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(2, 'YourFood', 'YourFood est une plateforme conviviale permettant à chacun de commander des repas via une interface simple et accessible à tous.', '2024-04-20 12:29:06', 'yourfood.png','');
-INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(3, 'TurboTap', 'TurboTap propose une application de clic rapide pour évaluer la vitesse des joueurs, offrant ainsi un moyen ludique d''améliorer les réflexes et la coordination.', '2024-04-20 12:29:06', 'turbo.png','');
-INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(4, 'BourseApp', 'BourseApp est une application boursière qui affiche sous forme de graphe des données liés à la crypto-monnaie.', '2024-04-20 12:29:06', 'bourse.png','');
-INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(5, 'Nas''Info', 'Nas''Info est un site web qui affiche les articles que la Nasa publie régulierement.', '2024-04-20 12:29:06', 'nasa.png','');
-INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(6, 'Porfoliot', 'Mon portfolio détaille les raisons ayant motivé mon choix de carrière dans le domaine de l''informatique, illustrant mes passions et mes objectifs professionnels.', '2024-04-20 12:29:06', 'porfoliot.png','');
-INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(7, 'ShopLink', 'ShopLink est un site web permettant de commander des produits frais que l''on retrouve dans les plus grands magazins.', '2024-04-20 12:29:06', 'shoplink.png','');
-INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`,`git`) VALUES
-(8, 'GraphMap', 'GraphMap est une application permettant aux dispensaires d''hopital de trouver le meilleur trajet pour accompagner les patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'graphmap.png','');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
+(1, 'Sportify', 'Sportify est une plateforme sociale qui offre aux utilisateurs la possibilité de pronostiquer sur des matchs sportifs tout en leur permettant de publier et de partager du contenu.', '2024-04-20 12:29:06', 'sportify.png','https://github.com/Rafiklatrikdu69/Sportify_deploy','test');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
+(2, 'YourFood', 'YourFood est une plateforme conviviale permettant à chacun de commander des repas via une interface simple et accessible à tous.', '2024-04-20 12:29:06', 'yourfood.png','https://forge.univ-lyon1.fr/p2200950/yourfood','test');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
+(3, 'TurboTap', 'TurboTap propose une application de clic rapide pour évaluer la vitesse des joueurs, offrant ainsi un moyen ludique d''améliorer les réflexes et la coordination.', '2024-04-20 12:29:06', 'turbo.png','https://github.com/Rafiklatrikdu69/TurboTap','test');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
+(4, 'BourseApp', 'BourseApp est une application boursière qui affiche sous forme de graphe des données liés à la crypto-monnaie.', '2024-04-20 12:29:06', 'bourse.png','https://github.com/Rafiklatrikdu69/app-nest','test');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
+(5, 'Nas''Info', 'Nas''Info est un site web qui affiche les articles que la Nasa publie régulierement.', '2024-04-20 12:29:06', 'nasa.png','https://github.com/Rafiklatrikdu69/NasaInfo','test');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
+(6, 'Porfoliot', 'Mon portfolio détaille les raisons ayant motivé mon choix de carrière dans le domaine de l''informatique, illustrant mes passions et mes objectifs professionnels.', '2024-04-20 12:29:06', 'porfoliot.png','https://github.com/Rafiklatrikdu69/portfolio','test');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
+(7, 'ShopLink', 'ShopLink est un site web permettant de commander des produits frais que l''on retrouve dans les plus grands magazins.', '2024-04-20 12:29:06', 'shoplink.png','https://github.com/Rafiklatrikdu69/ShopLink','test');
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
+(8, 'GraphMap', 'GraphMap est une application permettant aux dispensaires d''hopital de trouver le meilleur trajet pour accompagner les patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'graphmap.png','https://github.com/Rafiklatrikdu69/GraphMap','test');
 
 
 

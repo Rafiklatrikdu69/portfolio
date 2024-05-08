@@ -1,4 +1,5 @@
-<h2>{{ categorie.nom_cat }}</h2>
+
+<app-nom-categorie [categorie]="categorie.nom_cat"></app-nom-categorie>
 <div id="card-technos">
     <div *ngFor="let tech of categorie.technos; let j = index; ">
         <app-card-techno  [techno]="tech"></app-card-techno>

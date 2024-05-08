@@ -23,13 +23,7 @@
   height: 100vh;
 
 }
-img{
-    height: 250px;
-    width: 240px;
-    border-radius: 50%;
-    margin-left: 40%;
-      
-}
+
 #section .propos {
     margin-left: 20%;
 }

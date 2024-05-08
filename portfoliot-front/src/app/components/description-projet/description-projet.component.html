@@ -3,9 +3,16 @@
     <div id="flex-description">
         <h1>{{projet.nom_projet}}</h1>
         <img [attr.src]="'assets/' + projet.image">
+        <div>
+            <app-description-plus 
+            [descriptionplus]="projet.descriptionplus" 
+            [description]="projet.description">
+            </app-description-plus>
+        </div>
+        
         <section id="flex-section">
             <div>
-                <h2>Liste des technos que jai utilisé</h2>
+                <h2>La liste des technos que j'ai utilisées</h2>
                 <div class="flex-technos">
                     <div *ngFor="let tech of projet.technos; let j = index; ">
                         <app-card-techno  [techno]="tech"></app-card-techno>
@@ -16,7 +23,9 @@
                 <app-button-git [git]="projet.git"></app-button-git>
             </div>
         </section>  
-       
+
+       <app-retour-page-home>
+       </app-retour-page-home>
     </div>
 </ng-container>
 

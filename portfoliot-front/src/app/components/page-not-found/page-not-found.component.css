@@ -1,0 +1,9 @@
+p{
+    width: 100%;
+    text-align: center;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

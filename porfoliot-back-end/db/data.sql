@@ -69,21 +69,21 @@ CREATE TABLE `projet` (
 --
 
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
-(1, 'Sportify', 'Sportify est une plateforme sociale qui offre aux utilisateurs la possibilité de pronostiquer sur des matchs sportifs tout en leur permettant de publier et de partager du contenu.', '2024-04-20 12:29:06', 'sportify.png','https://github.com/Rafiklatrikdu69/Sportify_deploy','test');
+(1, 'Sportify', 'Sportify est une plateforme sociale qui offre aux utilisateurs la possibilité de pronostiquer sur des matchs sportifs tout en leur permettant de publier et de partager du contenu.', '2024-04-20 12:29:06', 'sportify.png','https://github.com/Rafiklatrikdu69/Sportify_deploy','Ce projet Universitaire à été réaliser en groupe de 4.Dans ce projet je me suis occuper de mettre en place l''architecture de l''application ainsi que du déploiment avec AWS.');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
-(2, 'YourFood', 'YourFood est une plateforme conviviale permettant à chacun de commander des repas via une interface simple et accessible à tous.', '2024-04-20 12:29:06', 'yourfood.png','https://forge.univ-lyon1.fr/p2200950/yourfood','test');
+(2, 'YourFood', 'YourFood est une plateforme conviviale permettant à chacun de commander des repas via une interface simple et accessible à tous.', '2024-04-20 12:29:06', 'yourfood.png','https://forge.univ-lyon1.fr/p2200950/yourfood','Ce projet Universitaire à été réaliser en binome.Ce projet consistait à comprendre l''utilisation des langages natifs tels que CSS et HTML.');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
-(3, 'TurboTap', 'TurboTap propose une application de clic rapide pour évaluer la vitesse des joueurs, offrant ainsi un moyen ludique d''améliorer les réflexes et la coordination.', '2024-04-20 12:29:06', 'turbo.png','https://github.com/Rafiklatrikdu69/TurboTap','test');
+(3, 'TurboTap', 'TurboTap propose une application de clic rapide pour évaluer la vitesse des joueurs, offrant ainsi un moyen ludique d''améliorer les réflexes et la coordination.', '2024-04-20 12:29:06', 'turbo.png','https://github.com/Rafiklatrikdu69/TurboTap','Dans ce projet professionnel j''ai pu découvrir les frameworks c# et Angular et j''ai donc commencer à apprécier Angular.');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
-(4, 'BourseApp', 'BourseApp est une application boursière qui affiche sous forme de graphe des données liés à la crypto-monnaie.', '2024-04-20 12:29:06', 'bourse.png','https://github.com/Rafiklatrikdu69/app-nest','test');
+(4, 'BourseApp', 'BourseApp est une application boursière qui affiche sous forme de graphe des données liés à la crypto-monnaie.', '2024-04-20 12:29:06', 'bourse.png','https://github.com/Rafiklatrikdu69/app-nest','Le But de ce projet été de découvrir le framework NestJS avec Angular.');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
-(5, 'Nas''Info', 'Nas''Info est un site web qui affiche les articles que la Nasa publie régulierement.', '2024-04-20 12:29:06', 'nasa.png','https://github.com/Rafiklatrikdu69/NasaInfo','test');
+(5, 'Nas''Info', 'Nas''Info est un site web qui affiche les articles que la Nasa publie régulierement.', '2024-04-20 12:29:06', 'nasa.png','https://github.com/Rafiklatrikdu69/NasaInfo','Ce projet m''a permis de m''ameliorer sur l''utilisation des API avec les services Angula.r');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
-(6, 'Porfoliot', 'Mon portfolio détaille les raisons ayant motivé mon choix de carrière dans le domaine de l''informatique, illustrant mes passions et mes objectifs professionnels.', '2024-04-20 12:29:06', 'porfoliot.png','https://github.com/Rafiklatrikdu69/portfolio','test');
+(6, 'Porfoliot', 'Mon portfolio détaille les raisons ayant motivé mon choix de carrière dans le domaine de l''informatique, illustrant mes passions et mes objectifs professionnels.', '2024-04-20 12:29:06', 'porfoliot.png','https://github.com/Rafiklatrikdu69/portfolio','Ce projet personnel m''a permis d''en apprendre un peu plus sur les composant Angular.');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
-(7, 'ShopLink', 'ShopLink est un site web permettant de commander des produits frais que l''on retrouve dans les plus grands magazins.', '2024-04-20 12:29:06', 'shoplink.png','https://github.com/Rafiklatrikdu69/ShopLink','test');
+(7, 'ShopLink', 'ShopLink est un site web permettant de commander des produits frais que l''on retrouve dans les plus grands magazins.', '2024-04-20 12:29:06', 'shoplink.png','https://github.com/Rafiklatrikdu69/ShopLink','Ce projet personnel à été pour une découverte du framework Symfony.');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
-(8, 'GraphMap', 'GraphMap est une application permettant aux dispensaires d''hopital de trouver le meilleur trajet pour accompagner les patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'graphmap.png','https://github.com/Rafiklatrikdu69/GraphMap','test');
+(8, 'GraphMap', 'GraphMap est une application permettant aux dispensaires d''hopital de trouver le meilleur trajet pour accompagner les patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'graphmap.png','https://github.com/Rafiklatrikdu69/GraphMap','Ce Projet Universitaire à été réaliser en binome, dans ce projet je suis occuper principalement de l''IHM avec Swing mais aussi des algorithmes de parcours de graphe.');
 
 
 

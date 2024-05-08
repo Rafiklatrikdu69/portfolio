@@ -39,6 +39,5 @@ img{
         flex-wrap: wrap;
         gap: 15px;
         align-items: center;
-        width: min-content;
     }
 }

@@ -11,9 +11,12 @@ export class ApiProjetService {
    url = "http://localhost:3000/";
 
   constructor(private http:HttpClient) {}
-
    public getAllProjets() : Observable<Projet[]>{
     return this.http.get<Projet[]>(this.url + 'projet/get', { withCredentials: true });
+   }
+   public getProjetById(id_projet : number) : Observable<Projet>
+   {
+      return this.http.get<Projet>(this.url + 'projet/'+ id_projet);
    }
 
 }

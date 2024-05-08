@@ -9,8 +9,5 @@ export class Technology{
         this.id_techno = id_techno;
         this.nom_techno = nom_techno;
         this.image_techno = image_techno;
-
     }
-
-
 }

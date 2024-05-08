@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import Typewriter from '../../../../node_modules/t-writer.js/dist/t-writer.js'
+import Typewriter from '../../../../../node_modules/t-writer.js/dist/t-writer.js'
 
 @Component({
   selector: 'app-home',

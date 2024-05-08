@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { Categorie } from '../../../../entity/Categorie';
+import { Categorie } from '../../../../../entity/Categorie';
 import { CommonModule } from '@angular/common';
-import { CardTechnoComponent } from '../card-techno/card-techno.component';
+import { CardTechnoComponent } from '../../../../card-techno/card-techno.component';
 
 @Component({
   selector: 'app-categorie-techno-card',

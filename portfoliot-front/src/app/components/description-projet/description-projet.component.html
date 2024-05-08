@@ -1,0 +1,16 @@
+
+<ng-container *ngIf="projet$ | async as projet"><!-- On traite les donnes de maniere async avec un observable angular soccupe du reste--> 
+    <div id="flex-description">
+        <h1>{{projet.nom_projet}}</h1>
+        <img [attr.src]="'assets/' + projet.image">
+        <div>
+            <h2>Liste des technos que jai utilisé</h2>
+            <div class="flex-technos">
+                <div *ngFor="let tech of projet.technos; let j = index; ">
+                    <app-card-techno  [techno]="tech"></app-card-techno>
+                </div> 
+            </div>
+        </div>  
+    </div>
+  </ng-container>
+  

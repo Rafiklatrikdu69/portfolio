@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { Projet } from '../../../entity/projet';
+import { Projet } from '../../entity/projet';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-projet',
@@ -14,4 +15,8 @@ import { CommonModule } from '@angular/common';
 })
 export class CardProjetComponent {
   @Input() projet !: Projet;
+  constructor(private route:Router){}
+  navigate(id:number){
+      this.route.navigate(['/projet',id]);
+  }
 }

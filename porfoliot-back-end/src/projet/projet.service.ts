@@ -25,7 +25,10 @@ export class ProjetService {
   }
 
   findOne(id: number) {
-   return this.projetRepository.findOne({where: {id_projet: id}});
+   return this.projetRepository.findOne({
+    relations: ['technos', 'technos.categorie'],
+    where: {id_projet: id}
+  });
   }
 
   update(id: number, updateProjetDto: UpdateProjetDto) {

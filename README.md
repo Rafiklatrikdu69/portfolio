@@ -1,7 +1,7 @@
 # Mon portfolio
 
 ## Pour lancer le projet :
-- ``` bash git clone https://github.com/Rafiklatrikdu69/portfolio.git ```
+- ``` git clone https://github.com/Rafiklatrikdu69/portfolio.git ```
 - Allez dans le dossier porfoliot-backend et tapez la commande : 
   ```
   bash docker-compose up -d

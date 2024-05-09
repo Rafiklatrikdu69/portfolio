@@ -20,14 +20,23 @@ export class ProjetService {
   findAll() {
     // @ts-ignore
     return this.projetRepository.find({
-      relations: ['technos', 'technos.categorie']
+      relations: ['technos', 'technos.categorie'],
+      order: {
+        nom_projet:  "ASC"
+      }
     })
   }
 
   findOne(id: number) {
    return this.projetRepository.findOne({
     relations: ['technos', 'technos.categorie'],
-    where: {id_projet: id}
+    where: {id_projet: id},
+    
+    order: {
+      technos:{
+        nom_techno: "ASC"
+      }
+    }
   });
   }
 

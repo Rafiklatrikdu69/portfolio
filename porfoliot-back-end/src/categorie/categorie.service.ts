@@ -21,7 +21,12 @@ export class CategorieService {
     return this.categorieRepository.find({
    relations:{
     technos:true,
-   }
+   },
+   order: {
+    technos: {
+        nom_techno: "ASC"
+    }
+}
 
     });
   }

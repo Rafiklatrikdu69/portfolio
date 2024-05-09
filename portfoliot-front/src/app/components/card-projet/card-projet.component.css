@@ -34,8 +34,6 @@
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
-  /* Style the back side */
   .flip-card-back {
     
     transform: rotateY(180deg);
@@ -51,12 +49,7 @@
     text-align: center;
     align-items: center;
   
-  }
-
-  .flip-card-front{
-    padding: 10px;
-  }
-  
+  } 
 
   @media screen and (max-width: 1200px) {
     .flip-card-back {
@@ -64,5 +57,16 @@
     }
     .flip-card:hover .flip-card-inner {
       transform: rotateY(0deg);
+    }
+    .flip-card-front, .flip-card-back {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      border-radius: 15px;
+      position: absolute;
+      width: 80%;
+      height: 100%;
+      padding: 13px;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+      margin-left: 20px;
     }
    }

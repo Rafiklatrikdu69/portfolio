@@ -1,7 +1,10 @@
 <div class="flip-card" (click)="navigate(projet.id_projet)">
   <div class="flip-card-inner">
     <div class="flip-card-back">
-      <app-image-projet [img]="'assets/' + projet.image"></app-image-projet>
+      <app-image-projet [img]="'assets/' + projet.image" 
+      [classImg]="'imgFlipCard'">
+    </app-image-projet>
+    
       <p><strong> Techno(s) Utilisées :</strong> </p>
       <div class="flex-technos-back">
         <app-technos [technos]="projet.technos"></app-technos>

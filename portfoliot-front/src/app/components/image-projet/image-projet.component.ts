@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ImageProjetComponent {
 @Input() img!:string;
+@Input() classImg!:string;
 }

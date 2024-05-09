@@ -5,11 +5,11 @@ import { Projet } from '../../entity/projet';
 import { Observable } from 'rxjs';
 import { CardProjetComponent } from '../card-projet/card-projet.component';
 import { CommonModule } from '@angular/common';
-import { CategorieTechnoCardComponent } from '../root/technos/technologies/categorie-techno-card/categorie-techno-card.component';
 import { CardTechnoComponent } from '../card-techno/card-techno.component';
 import { ButtonGitComponent } from '../button-git/button-git.component';
 import { DescriptionPlusComponent } from './description-plus/description-plus.component';
 import { RetourPageHomeComponent } from '../retour-page-home/retour-page-home.component';
+import { ImageProjetComponent } from '../image-projet/image-projet.component';
 
 @Component({
   selector: 'app-description-projet',
@@ -21,7 +21,8 @@ import { RetourPageHomeComponent } from '../retour-page-home/retour-page-home.co
     CardTechnoComponent,
     ButtonGitComponent,
     DescriptionPlusComponent,
-    RetourPageHomeComponent
+    RetourPageHomeComponent,
+    ImageProjetComponent
   ],
   templateUrl: './description-projet.component.html',
   styleUrl: './description-projet.component.css'

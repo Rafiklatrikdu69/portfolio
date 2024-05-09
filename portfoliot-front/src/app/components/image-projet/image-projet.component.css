@@ -1,0 +1,11 @@
+.imgFlipCard{
+    border-radius: 15px;
+    width:100%;
+    height: 180px;
+}
+.imageProjetSection{
+    width: 100%;
+    height: 45%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

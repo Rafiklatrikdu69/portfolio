@@ -2,28 +2,35 @@
 <ng-container *ngIf="projet$ | async as projet"><!-- On traite les donnes de maniere async avec un observable angular soccupe du reste--> 
     <div id="flex-description">
         <h1>{{projet.nom_projet}}</h1>
-        <img [attr.src]="'assets/' + projet.image">
+        <app-image-projet [img]="'assets/' + projet.image" 
+        [classImg]="'imageProjetSection'">
+      </app-image-projet>
+
         <div>
             <app-description-plus 
             [descriptionplus]="projet.descriptionplus" 
             [description]="projet.description">
             </app-description-plus>
         </div>
-        
+        <h2>La liste des Outils & technos que j'ai utilisées</h2>
         <section id="flex-section">
             <div>
-                <h2>La liste des technos que j'ai utilisées</h2>
-                <div class="flex-technos">
+              
+                <div 
+                [ngClass]=
+                "{'flex-technos': projet.technos.length==1,'flex-technos-solo': projet.technos.length>1 }">
                     <div *ngFor="let tech of projet.technos; let j = index; ">
                         <app-card-techno  [techno]="tech"></app-card-techno>
                     </div> 
                 </div>
             </div>
-            <div>
-                <app-button-git [git]="projet.git"></app-button-git>
-            </div>
+         
         </section>  
-
+        <div>
+            <app-button-git
+             [git]="projet.git">
+            </app-button-git>
+        </div>
        <app-retour-page-home>
        </app-retour-page-home>
     </div>

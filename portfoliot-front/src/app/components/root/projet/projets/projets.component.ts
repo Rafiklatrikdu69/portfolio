@@ -19,9 +19,5 @@ export class ProjetsComponent{
   projet: Projet[] =[];
   projets$ :  Observable<Projet[]> = this.api.getAllProjets();//Angular s'occupe de recuperer les données.
   constructor(private api: ApiProjetService,private router :Router) {}
-  ngOnInit(): void {
-    this.projets$.subscribe((projet: Projet[]) => {
-      console.log('Valeur émise par projet$ :', projet);
-    });
-  }
+ 
 }

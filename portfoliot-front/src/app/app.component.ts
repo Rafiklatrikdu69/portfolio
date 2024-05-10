@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiProjetService } from './services/api-projet.service';
 import { ApitechnosService } from './services/apitechnos.service';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { ApitechnosService } from './services/apitechnos.service';
     HttpClientModule,
     RouterOutlet,
     CommonModule,
+    FooterComponent
    
   ],
   templateUrl: './app.component.html',

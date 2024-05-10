@@ -7,12 +7,17 @@ import { TechnologiesComponent } from './technos/technologies/technologies.compo
 import { CompetenceComponent } from './competences/competence/competence.component';
 import { ApitechnosService } from '../../services/apitechnos.service';
 import { ApiProjetService } from '../../services/api-projet.service';
+import { FooterComponent } from '../footer/footer.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  providers: [ApiProjetService,ApitechnosService],
+  providers: 
+  [
+    ApiProjetService,
+    ApitechnosService
+  ],
   imports: 
   [
     NavComponent,
@@ -21,6 +26,7 @@ import { ApiProjetService } from '../../services/api-projet.service';
     HomeComponent,
     TechnologiesComponent,
     CompetenceComponent,
+    FooterComponent
   ],
   templateUrl: './root.component.html',
   styleUrl: './root.component.css'

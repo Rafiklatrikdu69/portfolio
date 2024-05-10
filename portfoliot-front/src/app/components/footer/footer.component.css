@@ -1,0 +1,35 @@
+.root{
+    margin-top: calc(150vh);
+    height: 50px;
+    text-align: center;
+    bottom: 0px;
+    right: 0px;
+}
+.description-pos{
+    height: 50px;
+    text-align: center;
+    bottom: 0px;
+    right: 0px;
+}
+div{
+    position: absolute;
+    left: 0;
+    margin: 0px;
+    height: 50px;
+    width: 100%;
+}
+@media screen and (max-width: 900px) {
+    .root{
+        margin-top: calc(160vh);
+        height: 50px;
+        text-align: center;
+        bottom: 0px;
+        right: 0px;
+    }
+    .description-pos{
+        height: 50px;
+        text-align: center;
+        bottom: 0px;
+        right: 0px;
+    }
+   }

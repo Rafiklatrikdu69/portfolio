@@ -10,6 +10,7 @@ import { ButtonGitComponent } from '../button-git/button-git.component';
 import { DescriptionPlusComponent } from './description-plus/description-plus.component';
 import { RetourPageHomeComponent } from '../retour-page-home/retour-page-home.component';
 import { ImageProjetComponent } from '../image-projet/image-projet.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-description-projet',
@@ -22,7 +23,8 @@ import { ImageProjetComponent } from '../image-projet/image-projet.component';
     ButtonGitComponent,
     DescriptionPlusComponent,
     RetourPageHomeComponent,
-    ImageProjetComponent
+    ImageProjetComponent,
+    FooterComponent
   ],
   templateUrl: './description-projet.component.html',
   styleUrl: './description-projet.component.css'

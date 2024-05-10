@@ -1,7 +1,7 @@
 section{
     width: 100%;
     height: 100vh;
-    padding-top: calc(120vh);
+    padding-top: calc(160vh);
     text-align: center;
     display: flex;
     align-items: center;
@@ -10,8 +10,11 @@ section{
     gap: 60px;
 }
 h1{
-  font-size: 30px;
+  font-size: 33px;
   text-decoration: underline;
+}
+h2{
+  width:60%;
 }
 
 input, ul.submenu {

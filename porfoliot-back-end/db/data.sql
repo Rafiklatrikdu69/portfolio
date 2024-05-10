@@ -79,7 +79,7 @@ INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
 (5, 'Nas''Info', 'Nas''Info est un site web qui affiche les articles que la Nasa publie régulierement.', '2024-04-20 12:29:06', 'nasa.png','https://github.com/Rafiklatrikdu69/NasaInfo','Ce projet m''a permis de m''ameliorer sur l''utilisation des API avec les services Angular.');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
-(6, 'Porfoliot', 'Mon portfolio détaille les raisons ayant motivé mon choix de carrière dans le domaine de l''informatique, illustrant mes passions et mes objectifs professionnels.', '2024-04-20 12:29:06', 'porfoliot.png','https://github.com/Rafiklatrikdu69/portfolio','Ce projet personnel m''a permis d''en apprendre un peu plus sur les composants Angular.');
+(6, 'Portfolio', 'Mon portfolio détaille les raisons ayant motivé mon choix de carrière dans le domaine de l''informatique, illustrant mes passions et mes objectifs professionnels.', '2024-04-20 12:29:06', 'porfoliot.png','https://github.com/Rafiklatrikdu69/portfolio','Ce projet personnel m''a permis d''en apprendre un peu plus sur les composants Angular.');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
 (7, 'ShopLink', 'ShopLink est un site web permettant de commander des produits frais que l''on retrouve dans les plus grands magazins.', '2024-04-20 12:29:06', 'shoplink.png','https://github.com/Rafiklatrikdu69/ShopLink','Ce projet personnel à été pour une découverte du framework Symfony.');
 INSERT INTO `projet` (`id_projet`, `nom_projet`, `description` ,`date`, `image`,`git`,`descriptionplus`) VALUES
@@ -116,6 +116,8 @@ INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (9, 1);
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (25, 1);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(31, 1);
 -- projet 2
 
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
@@ -124,6 +126,8 @@ INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (10, 2);
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (25, 2);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(32, 2);
 -- projet 3
 
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
@@ -134,6 +138,8 @@ INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (30, 3);
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (24, 3);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(31, 3);
 
 -- projet 4
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
@@ -142,6 +148,8 @@ INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (3, 4);
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (25, 4);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(31, 4);
 -- projet 5 
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (2, 5);
@@ -149,6 +157,8 @@ INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (29, 5);
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (25, 5);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(31, 5);
 
 -- projet 6
 
@@ -164,7 +174,8 @@ INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (25, 6);
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (29, 6);
-
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(31, 6);
 -- projet 7
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (2, 7);
@@ -174,10 +185,13 @@ INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (29, 7);
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (25, 7);
-
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(31, 7);
 -- projet 8 
 INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (23, 8);
+INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
+(31, 8);
 
 -- --------------------------------------------------------
 

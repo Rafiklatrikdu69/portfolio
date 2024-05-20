@@ -18,10 +18,10 @@ import { ImagePersoComponent } from './image-perso/image-perso.component';
 export class AboutComponent {
   p =
   "Salut, je m'appelle Rafik et j'ai 19 ans."
-  +"Depuis que je suis tout petit, ma passion pour les ordinateurs"
+  +"Depuis que je suis tout petit, ma passion pour les ordinateurs "
   +"ne fait que croître. J'ai été fasciné par leur fonctionnement et leur potentiel dès mon plus jeune âge,"
-  +"ce qui m'a poussé à explorer le monde du développement informatique. "
-  +"J'ai consacré de nombreuses heures à apprendre et à expérimenter avec "
+  +"ce qui m'a poussé à explorer le monde du développement informatique en choisissant de faire un BUT Informatique. "
+  +"\n J'ai consacré de nombreuses heures à apprendre et à expérimenter avec "
   +"différents langages de programmation, frameworks et autres technologies.";
 
 

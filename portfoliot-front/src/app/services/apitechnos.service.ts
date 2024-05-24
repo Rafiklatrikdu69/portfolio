@@ -3,12 +3,13 @@ import { Injectable } from '@angular/core';
 import { Technology } from '../entity/Technology';
 import { Categorie } from '../entity/Categorie';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApitechnosService {
-  url = "http://localhost:3000/";
+  url = environment.apiUrl;
 
   constructor(private http:HttpClient) { }
   public getAlltechnos():Observable<Categorie[]>{

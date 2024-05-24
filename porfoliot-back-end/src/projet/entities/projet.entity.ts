@@ -1,6 +1,7 @@
 /* eslint-disable */
+import { Competence } from 'src/competence/entities/competence.entity';
 import { Technology } from '../../technologies/entities/technology.entity';
-import { Entity, Column, PrimaryGeneratedColumn, ManyToMany, JoinTable } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, ManyToMany, JoinTable, ManyToOne, JoinColumn } from 'typeorm';
 
 @Entity()
 export class Projet {
@@ -19,15 +20,22 @@ export class Projet {
 
   @Column()
   image: string;
- @Column()
+
+  @Column()
   git: string;
+
   @Column()
   descriptionplus:string;
+
   @ManyToMany(() => Technology, (techno: Technology) => techno.projets)
+ 
   @JoinTable({
     name: 'projet_techno', 
     joinColumn: { name: 'projet_id', referencedColumnName: 'id_projet' },
     inverseJoinColumn: { name: 'techno_id', referencedColumnName: 'id_techno' } 
   })
   technos: Technology[];
+  @ManyToOne(() => Competence, (competence: Competence) => competence.listeProjet)
+  @JoinColumn({name: 'projet_id'})
+  projetCompetence:Competence;
 }

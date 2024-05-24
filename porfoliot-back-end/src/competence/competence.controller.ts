@@ -11,12 +11,12 @@ export class CompetenceController {
  
   constructor(  private readonly competenceService: CompetenceService) {}
 
-  @Post()
+  @Post('add')
   create(@Body() createCompetenceDto: CreateCompetenceDto) {
     return this.competenceService.create(createCompetenceDto);
   }
 
-  @Get()
+  @Get('get')
   findAll() {
     return this.competenceService.findAll();
   }

@@ -23,6 +23,7 @@
     "@angular/ssr": "^17.0.3",
     "angular-typewriter-effect": "^0.0.1",
     "express": "^4.18.2",
+    "install": "^0.13.0",
     "rxjs": "~7.8.0",
     "t-writer.js": "^1.0.4",
     "tslib": "^2.3.0",

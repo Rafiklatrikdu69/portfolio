@@ -11,4 +11,6 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './nav.component.css'
 })
 
-export class NavComponent {}
+export class NavComponent {
+  
+}

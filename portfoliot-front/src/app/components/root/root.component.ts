@@ -4,10 +4,11 @@ import { AboutComponent } from './about/about.component';
 import { ProjetsComponent } from './projet/projets/projets.component';
 import { HomeComponent } from './home/home.component';
 import { TechnologiesComponent } from './technos/technologies/technologies.component';
-import { CompetenceComponent } from './competences/competence/competence.component';
+
 import { ApitechnosService } from '../../services/apitechnos.service';
 import { ApiProjetService } from '../../services/api-projet.service';
 import { FooterComponent } from '../footer/footer.component';
+import { AppCompetenceComponent } from '../app-competence/app-competence.component';
 
 
 @Component({
@@ -25,8 +26,8 @@ import { FooterComponent } from '../footer/footer.component';
     ProjetsComponent,
     HomeComponent,
     TechnologiesComponent,
-    CompetenceComponent,
-    FooterComponent
+    FooterComponent,
+    AppCompetenceComponent
   ],
   templateUrl: './root.component.html',
   styleUrl: './root.component.css'

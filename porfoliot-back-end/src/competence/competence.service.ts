@@ -5,20 +5,27 @@ import { UpdateCompetenceDto } from './dto/update-competence.dto';
 import { Repository } from 'typeorm';
 import { Competence } from './entities/competence.entity';
 import { InjectRepository } from '@nestjs/typeorm';
+import { Projet } from 'src/projet/entities/projet.entity';
 
 @Injectable()
 export class CompetenceService {
-  constructor(@InjectRepository(Competence)  private readonly competenceRepository : Repository<Competence>){}
+  constructor(
+    @InjectRepository(Competence)  
+    private readonly competenceRepository : 
+    Repository<Competence>){}
   create(createCompetenceDto: CreateCompetenceDto) {
-    return 'This action adds a new competence';
+    return this.competenceRepository.create({nom_competence:"dadad",description:"cdssdf",
+    listeProjet:[new Projet()]
+  })
   }
 
   findAll() {
-    return this.competenceRepository
-      .createQueryBuilder('Competence')
-      .select('Competence.nom_competence, Competence.description, COUNT(*) AS count')
-      .groupBy('Competence.nom_competence, Competence.description')
-      .getRawMany();
+    return this.competenceRepository.find({
+      relations: ['listeProjet', 'listeProjet.technos','listeProjet.techno.categorie'],
+    //  relations:{
+    //     listeProjet:true
+    //  }
+    });
   }
   
 

@@ -1,4 +1,22 @@
-<section id="competences">
+<div class="flex-competence">
+<section>
+    <ul class="navbar-nav">
+        <li><input type="radio" checked name="nav" (click)="getSemestre(1)"><span>Semestre 1</span></li>
+        <li><input type="radio" name="nav" (click)="getSemestre(2)"><span>Semestre 2</span></li>
+        <li><input type="radio" name="nav" (click)="getSemestre(3)"><span>Semestre 3</span></li>
+        <li><input type="radio" name="nav"><span>Semestre 4</span></li>
+        <!-- <li><input type="radio" name="nav"><span>Semestre 5</span></li>
+        <li><input type="radio" name="nav"><span>Semestre 6</span></li> -->
+      </ul>
+</section>
+<div *ngIf="observable$ | async as semestre" >
+    <div *ngFor="let item of semestre.competences">
+                <p>{{item.nom_competence}}</p>
+                <p>{{item.description}}</p>
+    </div>
+</div>
+<!-- <section id="competences">
+
     <h1>Mes compétences</h1> 
     <h2>
         Ma formation en BUT Informatique à l'IUT Lyon 1 m'a permis de diversifier mes compétences, 
@@ -66,4 +84,5 @@
             <li><a href="#">Veille Technologique.</a></li>
         </ul>
     </div>
-</section>
+</section> -->
+</div>

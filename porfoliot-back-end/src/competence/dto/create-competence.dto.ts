@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Projet } from "src/projet/entities/projet.entity";
 
 /* eslint-disable prettier/prettier */
@@ -8,5 +9,5 @@ export class CreateCompetenceDto {
   
     description: string;
   
-    listeProjet: Projet[];
+    projet: Projet;
 }

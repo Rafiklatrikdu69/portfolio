@@ -18,15 +18,33 @@ export class SemestreService {
 
   findAll() {
     return this.projetRepository.find({
-       relations : ['competences','competences.listeProjet','competences.listeProjet.technos','competences.niveauCompetence','competences.niveauCompetence.apprentissages']
+       relations : 
+       [
+       'competences',
+       'competences.projet',
+       'competences.projet.technos',
+       'competences.niveauCompetence',
+       'competences.niveauCompetence.apprentissages'
+      ]
     });
   }
 
   findOne(id: number) {
     return this.projetRepository.find({
-      relations : ['competences','competences.listeProjet','competences.listeProjet.technos','competences.niveauCompetence.apprentissages'],
+      relations : 
+      [
+      'competences',
+      'competences.projet',
+      'competences.projet.technos',
+      'competences.niveauCompetence.apprentissages'
+    ],
     where :{
       id_semestre : id
+    },
+    order:{
+      competences:{
+          nom_competence:"ASC"
+      }
     }
     });
   }

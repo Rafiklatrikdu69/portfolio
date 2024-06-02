@@ -4,15 +4,16 @@
         <li><input type="radio" checked name="nav" (click)="getSemestre(1)"><span>Semestre 1</span></li>
         <li><input type="radio" name="nav" (click)="getSemestre(2)"><span>Semestre 2</span></li>
         <li><input type="radio" name="nav" (click)="getSemestre(3)"><span>Semestre 3</span></li>
-        <li><input type="radio" name="nav"><span>Semestre 4</span></li>
+        <li><input type="radio" name="nav" (click)="getSemestre(4)"><span>Semestre 4</span></li>
         <!-- <li><input type="radio" name="nav"><span>Semestre 5</span></li>
         <li><input type="radio" name="nav"><span>Semestre 6</span></li> -->
       </ul>
 </section>
-<div *ngIf="observable$ | async as semestre" >
-    <div *ngFor="let item of semestre.competences">
-                <p>{{item.nom_competence}}</p>
-                <p>{{item.description}}</p>
+<div *ngIf="observable$ | async as semestre"  class="flex-competence">
+    <div *ngFor="let competence of semestre.competences">
+        <app-card-competence 
+        [competence]="competence">
+        </app-card-competence>  
     </div>
 </div>
 <!-- <section id="competences">

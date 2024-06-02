@@ -1,8 +1,17 @@
+import { ApprentissageCritique } from "./ApprentissageCritique";
+import { Competence } from "./Competence";
+
 export class Niveau {
     id_niveau!: number;
     nom_niveau!: string;
-    constructor(id_niveau: number, nom_niveau:string) {
+    apprentissages!:ApprentissageCritique[];
+    constructor(
+        id_niveau: number, 
+        nom_niveau:string, 
+        apprentissages:ApprentissageCritique[]
+    ) {
         this.id_niveau = id_niveau;
         this.nom_niveau = nom_niveau;
+        this.apprentissages = apprentissages
     }
 }

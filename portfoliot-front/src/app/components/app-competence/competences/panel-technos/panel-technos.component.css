@@ -1,0 +1,9 @@
+.flex-technos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

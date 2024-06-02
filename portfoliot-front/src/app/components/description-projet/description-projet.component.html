@@ -28,6 +28,7 @@
         </section>  
         <div>
             <app-button-git
+             *ngIf="projet.git"
              [git]="projet.git">
             </app-button-git>
         </div>

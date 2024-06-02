@@ -3,8 +3,6 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { CompetenceService } from './competence.service';
 import { CreateCompetenceDto } from './dto/create-competence.dto';
 import { UpdateCompetenceDto } from './dto/update-competence.dto';
-import { Competence } from './entities/competence.entity';
-import { InjectRepository } from '@nestjs/typeorm';
 
 @Controller('competence')
 export class CompetenceController {

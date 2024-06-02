@@ -21,16 +21,16 @@ gap: 10px;
 }
 
 .navbar-nav li input:checked+* {
-  background: yellow;
-  text-decoration: underline;
+  background: rgb(212, 212, 202);
+  text-decoration: none;
 }
-li:hover{
+span:hover{
   cursor: pointer;
 }
 li{
 
   padding: 20px;
-  background-color: antiquewhite;
+  background-color: rgb(224, 221, 217);
   border-top-left-radius: 30px 30px;
   border-top-right-radius: 30px 30px;
 }
@@ -38,6 +38,12 @@ ul{
   display: flex;
   gap: 20px;
 }
+.flex-competence{
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 30px;
+}
   @media screen and (max-width: 900px) {
 
-   }
+  }

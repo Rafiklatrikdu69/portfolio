@@ -11,6 +11,7 @@ import { DescriptionPlusComponent } from './description-plus/description-plus.co
 import { RetourPageHomeComponent } from '../retour-page-home/retour-page-home.component';
 import { ImageProjetComponent } from '../image-projet/image-projet.component';
 import { FooterComponent } from '../footer/footer.component';
+  
 
 @Component({
   selector: 'app-description-projet',
@@ -42,6 +43,7 @@ export class DescriptionProjetComponent {
       this.projet$.subscribe((projet: Projet) => {
         console.log('Valeur émise par projet$ :', projet.technos);
       });
+    
     }
   }
 }

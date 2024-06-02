@@ -35,7 +35,7 @@ export class Projet {
     inverseJoinColumn: { name: 'techno_id', referencedColumnName: 'id_techno' } 
   })
   technos: Technology[];
-  @ManyToOne(() => Competence, (competence: Competence) => competence.listeProjet)
+  @ManyToOne(() => Competence, (competence: Competence) => competence.projet)
   @JoinColumn({name: 'projet_id'})
   projetCompetence:Competence;
 }

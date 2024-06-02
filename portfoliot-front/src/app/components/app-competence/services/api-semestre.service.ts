@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { Semestre } from '../../../entity/Semestre';
 import { environment } from '../../../../environments/environment';
-import { Niveau } from '../../../entity/Niveau';
+
 
 
 
@@ -24,9 +24,7 @@ export class ApiSemestreService {
       this.competenceSemestre.next(semestre[0]);
       return semestre;
     }
-  return new Semestre(1,'d',[],new Niveau(12,''))
- 
-  
+  return new Semestre(1,'d',[])  
   }
   getSemester():Observable<Semestre>{
     return this.ObsSemestre;

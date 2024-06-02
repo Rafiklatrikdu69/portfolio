@@ -1,6 +1,6 @@
 #projets{
   width: 100%;
-  height: 200vh;
+  height: auto;
 }
 h2{
     width: 100%;
@@ -28,7 +28,7 @@ h2{
 @media screen and (max-width: 900px) {
   #projets{
     width: 100%;
-    height: 380vh;
+    height: auto;
   }
   .flip-card-back {
     display: none;

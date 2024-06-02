@@ -1,0 +1,16 @@
+<div class="panel" >
+    <card-apprentissage
+     *ngFor="let app of apprentissages" 
+     [nom]="app.description_apprentissage">
+    </card-apprentissage>
+    <chart-apprentissage-note [competenceId]="competenceId" [value]="apprentissages">
+
+    </chart-apprentissage-note>
+</div> 
+
+
+
+
+
+
+

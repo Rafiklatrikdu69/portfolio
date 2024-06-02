@@ -1,0 +1,13 @@
+<section>
+    <p>{{competence.nom_competence}}</p>
+    <p>{{competence.description}}</p>
+    <app-panel-projet 
+    *ngIf="competence.projet" 
+    [projet]="competence.projet">
+    </app-panel-projet>
+    <panel-apprentissage 
+    [competenceId]="competence.id_competence" 
+    [apprentissages]="competence.niveauCompetence.apprentissages"
+    ></panel-apprentissage>
+  
+</section>

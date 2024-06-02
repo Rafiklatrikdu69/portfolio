@@ -14,16 +14,14 @@ export class CompetenceService {
     private readonly competenceRepository : 
     Repository<Competence>){}
   create(createCompetenceDto: CreateCompetenceDto) {
-    return this.competenceRepository.create({nom_competence:"dadad",description:"cdssdf",
-    listeProjet:[new Projet()]
-  })
+  
   }
 
   findAll() {
     return this.competenceRepository.find({
-      relations: ['listeProjet', 'listeProjet.technos','listeProjet.techno.categorie'],
+      relations: ['projet', 'projet.technos','projet.techno.categorie'],
     //  relations:{
-    //     listeProjet:true
+    //     projet:true
     //  }
     });
   }

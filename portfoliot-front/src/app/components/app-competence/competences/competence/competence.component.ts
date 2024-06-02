@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { CardComponentComponent } from '../card-component/card-component.component';
+import { Component } from '@angular/core';
 import { ApiSemestreService } from '../../services/api-semestre.service';
 import { CommonModule } from '@angular/common';
-import { Observable } from 'rxjs';
-import { Semestre } from '../../../../entity/Semestre';
+import { CardCompetenceComponent } from '../card-competence/card-competence.component';
+import { CardProjetComponent } from '../../../card-projet/card-projet.component';
+
 
 @Component({
   selector: 'app-competence',
@@ -11,7 +11,9 @@ import { Semestre } from '../../../../entity/Semestre';
   imports: 
   [
     CommonModule,
-    CardComponentComponent
+    CardCompetenceComponent,
+    
+    
   ],
     templateUrl: './competence.component.html',
   styleUrl: './competence.component.css'

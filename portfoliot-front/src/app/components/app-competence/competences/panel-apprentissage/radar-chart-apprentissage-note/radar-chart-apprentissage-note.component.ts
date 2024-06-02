@@ -1,7 +1,5 @@
 import { AfterViewInit, Component, Input, OnDestroy } from '@angular/core';
 import { Chart } from 'chart.js/auto';
-import { OrganizationChartModule } from 'primeng/organizationchart';
-import { TreeNode } from 'primeng/api'; 
 @Component({
   selector: 'chart-apprentissage-note',
   standalone: true,
@@ -9,13 +7,12 @@ import { TreeNode } from 'primeng/api';
   styleUrls: ['./radar-chart-apprentissage-note.component.css']
 })
 export class RadarChartApprentissageNoteComponent implements AfterViewInit, OnDestroy {
-  GfG!: TreeNode[]; 
+
   @Input() value!: any;
   @Input() competenceId!:number;
   public chart: any;
 
   ngAfterViewInit(): void {
-    console.log(this.value);
     this.createChart();
   }
 
@@ -28,7 +25,6 @@ export class RadarChartApprentissageNoteComponent implements AfterViewInit, OnDe
   createChart() {
     const nomApp = this.value.map((value) =>(value.nom_apprentissage))
     const noteApp = this.value.map((value) =>(value.poids_apprentissage))
-   console.log(nomApp);
     const chartId = 'MyChart' + this.competenceId;
     const canvas = document.getElementById(chartId) as HTMLCanvasElement;
 
@@ -41,7 +37,7 @@ export class RadarChartApprentissageNoteComponent implements AfterViewInit, OnDe
             {
               label: "Apprentissage",
               data: noteApp,
-              backgroundColor: 'rgba(255, 99, 132, 0.2)'
+              backgroundColor: 'rgba(54, 162, 235, 0.2)'
             },
           ]
         },

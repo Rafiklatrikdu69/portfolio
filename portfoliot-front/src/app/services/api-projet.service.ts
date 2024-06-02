@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, lastValueFrom } from 'rxjs';
 import { Projet } from '../entity/projet';
 import { environment } from '../../environments/environment';
 
@@ -12,12 +12,12 @@ export class ApiProjetService {
    url = environment.apiUrl;
 
   constructor(private http:HttpClient) {}
-   public getAllProjets() : Observable<Projet[]>{
-    return this.http.get<Projet[]>(this.url + 'projet/get', { withCredentials: true });
+   async getAllProjets(){
+    return  lastValueFrom( this.http.get<Projet[]>(this.url + 'projet/get'));
    }
-   public getProjetById(id_projet : number) : Observable<Projet>
+   async getProjetById(id_projet : number)
    {
-      return this.http.get<Projet>(this.url + 'projet/'+ id_projet);
+      return lastValueFrom(this.http.get<Projet>(this.url + 'projet/'+ id_projet));
    }
 
 }

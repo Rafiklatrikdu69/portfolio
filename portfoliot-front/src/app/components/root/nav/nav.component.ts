@@ -1,6 +1,6 @@
-import {Inject, Component, ElementRef, ViewChild, Injectable, model } from '@angular/core';
+import {Component } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+
 @Component({
   selector: 'app-nav',
   standalone: true,

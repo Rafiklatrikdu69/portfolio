@@ -4,7 +4,6 @@ import { AboutComponent } from './about/about.component';
 import { ProjetsComponent } from './projet/projets/projets.component';
 import { HomeComponent } from './home/home.component';
 import { TechnologiesComponent } from './technos/technologies/technologies.component';
-
 import { ApitechnosService } from '../../services/apitechnos.service';
 import { ApiProjetService } from '../../services/api-projet.service';
 import { FooterComponent } from '../footer/footer.component';

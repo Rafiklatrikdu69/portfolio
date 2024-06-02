@@ -11,7 +11,7 @@ import { DescriptionPlusComponent } from './description-plus/description-plus.co
 import { RetourPageHomeComponent } from '../retour-page-home/retour-page-home.component';
 import { ImageProjetComponent } from '../image-projet/image-projet.component';
 import { FooterComponent } from '../footer/footer.component';
-  
+
 
 @Component({
   selector: 'app-description-projet',
@@ -32,18 +32,13 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class DescriptionProjetComponent {
   constructor(private route: ActivatedRoute,private apiProjet:ApiProjetService){}
-  projet$ !: Observable<Projet>;
+  projet$ !: Promise<Projet>;
   id: number = 0;
   ngOnInit(): void {
     const idRoute = this.route.snapshot.paramMap.get('id')
     if(idRoute){
       this.id = +idRoute;
-      this.projet$ = this.apiProjet.getProjetById(this.id)
-      console.log(this.projet$)
-      this.projet$.subscribe((projet: Projet) => {
-        console.log('Valeur émise par projet$ :', projet.technos);
-      });
-    
+      this.projet$ = this.apiProjet.getProjetById(this.id)    
     }
   }
 }

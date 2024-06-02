@@ -17,7 +17,7 @@ import { Observable } from 'rxjs';
 })
 export class ProjetsComponent{
   projet: Projet[] =[];
-  projets$ :  Observable<Projet[]> = this.api.getAllProjets();//Angular s'occupe de recuperer les données.
+  projets$ :  Promise<Projet[]> = this.api.getAllProjets();//Angular s'occupe de recuperer les données.
   constructor(private api: ApiProjetService,private router :Router) {}
  
 }

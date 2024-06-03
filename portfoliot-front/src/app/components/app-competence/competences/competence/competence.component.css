@@ -10,6 +10,7 @@ gap: 10px;
   position: relative;
   display: inline-block;
 }
+
 .navbar-nav li input {
   position: absolute;
   width: 100%;

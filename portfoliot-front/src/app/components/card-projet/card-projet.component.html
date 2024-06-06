@@ -2,6 +2,7 @@
   <div class="flip-card-inner">
     <div class="flip-card-back">
       <app-image-projet 
+      *ngIf="projet?.image"
       [img]="'assets/' + projet.image" 
       [classImg]="'imgFlipCard'">
     </app-image-projet>

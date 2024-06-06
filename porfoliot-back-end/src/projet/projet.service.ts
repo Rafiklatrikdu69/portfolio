@@ -23,7 +23,10 @@ export class ProjetService {
       relations: ['technos', 'technos.categorie'],
       order: {
         nom_projet:  "ASC"
-      }
+      },
+      where :{
+        universitaire:false
+    }
     })
   }
 

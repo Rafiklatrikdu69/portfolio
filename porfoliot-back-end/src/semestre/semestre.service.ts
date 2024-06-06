@@ -25,7 +25,8 @@ export class SemestreService {
        'competences.projet.technos',
        'competences.niveauCompetence',
        'competences.niveauCompetence.apprentissages'
-      ]
+      ],
+   
     });
   }
 
@@ -39,7 +40,8 @@ export class SemestreService {
       'competences.niveauCompetence.apprentissages'
     ],
     where :{
-      id_semestre : id
+      id_semestre : id,
+    
     },
     order:{
       competences:{

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : mysql_db
--- Généré le : dim. 02 juin 2024 à 18:30
+-- Généré le : jeu. 06 juin 2024 à 21:01
 -- Version du serveur : 8.4.0
 -- Version de PHP : 8.2.19
 
@@ -104,7 +104,11 @@ INSERT INTO `apprentissage_critique` (`id_apprentissage`, `nom_apprentissage`, `
 (68, 'Réaliser une affiche', 13, 'Réaliser une affiche sur un sujet informatique avec la lecture en Z et d\'autres principes.', 9),
 (69, 'Arbre binaire', NULL, 'Travaille avec des arbres binaires.', 6),
 (70, 'PHP', NULL, 'Utilisation de langages orientés objets.', 9),
-(71, 'PHP', 14, 'Utilisation de langages orientés objets.', 9);
+(71, 'PHP', 14, 'Utilisation de langages orientés objets.', 9),
+(72, 'Conception', 16, 'Conceptualiser un modèle de données avec salesforces.', 5),
+(73, 'Composants', 16, 'Développer des composant LWC avec Salesforce.', 8),
+(74, 'Mailer', 16, 'Envoyer des emails dans Salesforce via des emails templates.', 6),
+(75, 'Trigger/Test', 16, 'Développer des triggers permettant la vérification des règles d\'intégrités (vérification de doublons , erreur, etc...)', 9);
 
 -- --------------------------------------------------------
 
@@ -160,7 +164,8 @@ INSERT INTO `competence` (`id_competence`, `nom_competence`, `id_semestre`, `des
 (11, 'Competence 2', 2, 'Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d’exécution, précision, consommation de ressources.', 11, 8),
 (12, 'Competence 4', 2, 'Concevoir, gérer, administrer et exploiter les données de l’entreprise et mettre à disposition toutes les informations pour un bon pilotage de l’entreprise.', 12, 11),
 (13, 'Competence 6', 2, 'Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.', 13, NULL),
-(15, 'Competence 1', 4, 'Développement d\'une application', 14, 1);
+(15, 'Competence 1', 4, 'Développement d\'une application', 14, 1),
+(16, 'Stage', 4, '', 16, 14);
 
 -- --------------------------------------------------------
 
@@ -209,26 +214,28 @@ CREATE TABLE `projet` (
   `image` varchar(255) NOT NULL,
   `git` varchar(255) NOT NULL,
   `descriptionplus` varchar(255) NOT NULL,
-  `projet_id` int DEFAULT NULL
+  `projet_id` int DEFAULT NULL,
+  `universitaire` tinyint NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `projet`
 --
 
-INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`, `git`, `descriptionplus`, `projet_id`) VALUES
-(1, 'Sportify', 'Sportify est une plateforme sociale qui offre aux utilisateurs la possibilité de pronostiquer sur des matchs sportifs tout en leur permettant de publier et de partager du contenu.', '2024-04-20 12:29:06', 'sportify.png', 'https://github.com/Rafiklatrikdu69/Sportify_deploy', 'Ce projet Universitaire à été réaliser en groupe de 4.Dans ce projet je me suis occuper de mettre en place l\'architecture de l\'application ainsi que du déploiment avec AWS.', 2),
-(2, 'YourFood', 'YourFood est une plateforme conviviale permettant à chacun de commander des repas via une interface simple et accessible à tous.', '2024-04-20 12:29:06', 'yourfood.png', 'https://forge.univ-lyon1.fr/p2200950/yourfood', 'Ce projet Universitaire à été réaliser en binome.Ce projet consistait à comprendre l\'utilisation des langages natifs tels que CSS et HTML.', NULL),
-(3, 'TurboTap', 'TurboTap propose une application de clic rapide pour évaluer la vitesse des joueurs, offrant ainsi un moyen ludique d\'améliorer les réflexes et la coordination.', '2024-04-20 12:29:06', 'turbo.png', 'https://github.com/Rafiklatrikdu69/TurboTap', 'Dans ce projet professionnel j\'ai pu découvrir les frameworks c# et Angular et j\'ai donc commencer à apprécier Angular.', NULL),
-(4, 'BourseApp', 'BourseApp est une application boursière qui affiche sous forme de graphe des données liés à la crypto-monnaie.', '2024-04-20 12:29:06', 'bourse.png', 'https://github.com/Rafiklatrikdu69/app-nest', 'Le But de ce projet été de découvrir le framework NestJS avec Angular.', NULL),
-(5, 'Nas\'Info', 'Nas\'Info est un site web qui affiche les articles que la Nasa publie régulierement.', '2024-04-20 12:29:06', 'nasa.png', 'https://github.com/Rafiklatrikdu69/NasaInfo', 'Ce projet m\'a permis de m\'ameliorer sur l\'utilisation des API avec les services Angular.', NULL),
-(6, 'Portfolio', 'Mon portfolio détaille les raisons ayant motivé mon choix de carrière dans le domaine de l\'informatique, illustrant mes passions et mes objectifs professionnels.', '2024-04-20 12:29:06', 'porfoliot.png', 'https://github.com/Rafiklatrikdu69/portfolio', 'Ce projet personnel m\'a permis d\'en apprendre un peu plus sur les composants Angular.', NULL),
-(7, 'ShopLink', 'ShopLink est un site web permettant de commander des produits frais que l\'on retrouve dans les plus grands magazins.', '2024-04-20 12:29:06', 'shoplink.png', 'https://github.com/Rafiklatrikdu69/ShopLink', 'Ce projet personnel à été pour une découverte du framework Symfony.', NULL),
-(8, 'GraphMap', 'GraphMap est une application permettant aux dispensaires d\'hopital de trouver le meilleur trajet pour accompagner les patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'graphmap.png', 'https://github.com/Rafiklatrikdu69/GraphMap', 'Ce Projet Universitaire à été réaliser en binome, dans ce projet je suis occuper principalement de l\'IHM avec Swing mais aussi des algorithmes de parcours de graphe.', NULL),
-(9, 'Annuaire Client', 'Ce projet Universitaire à pour but de traiter une annuaire de client ,permettant , de rechercher,filtrer ,supprimer des clients avec la programmation en C.', '2024-05-26 12:55:19', 'annuaire.png', 'https://forge.univ-lyon1.fr/p2200950/sae-c', ' ', NULL),
-(10, 'Base de données pour un Grossiste', 'une grossiste spécialisé dans la vente en gros de fleurs, souhaite mettre en place une application pour gérer ses opérations de vente et de distribution. L\'objectif est de simplifier la gestion des stocks, des commandes avec  base de données SQL.', '2024-05-26 13:29:47', 'grossisteprojet.png', '', '', NULL),
-(11, 'Adventure Works', 'Ce projet Universitaire  avait pour but d\'apprendre à visualiser des données d\'une grande entreprise afin de prendre les bonnes décisions pour vendre des produits.', '2024-05-26 16:09:00', 'power.png', '', '', NULL),
-(12, 'Comparaison algorithmique', 'Ce projet universitaire consiste à corriger des algorithmes de tris et à les ameliorer puis de calculer leurs complexité en mémoire.', '2024-05-26 16:12:16', 'projetalgo.png', '', '', NULL);
+INSERT INTO `projet` (`id_projet`, `nom_projet`, `description`, `date`, `image`, `git`, `descriptionplus`, `projet_id`, `universitaire`) VALUES
+(1, 'Sportify', 'Sportify est une plateforme sociale qui offre aux utilisateurs la possibilité de pronostiquer sur des matchs sportifs tout en leur permettant de publier et de partager du contenu.', '2024-04-20 12:29:06', 'sportify.png', 'https://github.com/Rafiklatrikdu69/Sportify_deploy', 'Ce projet Universitaire à été réaliser en groupe de 4.Dans ce projet je me suis occuper de mettre en place l\'architecture de l\'application ainsi que du déploiment avec AWS.', 2, 1),
+(2, 'YourFood', 'YourFood est une plateforme conviviale permettant à chacun de commander des repas via une interface simple et accessible à tous.', '2024-04-20 12:29:06', 'yourfood.png', 'https://forge.univ-lyon1.fr/p2200950/yourfood', 'Ce projet Universitaire à été réaliser en binome.Ce projet consistait à comprendre l\'utilisation des langages natifs tels que CSS et HTML.', NULL, 1),
+(3, 'TurboTap', 'TurboTap propose une application de clic rapide pour évaluer la vitesse des joueurs, offrant ainsi un moyen ludique d\'améliorer les réflexes et la coordination.', '2024-04-20 12:29:06', 'turbo.png', 'https://github.com/Rafiklatrikdu69/TurboTap', 'Dans ce projet professionnel j\'ai pu découvrir les frameworks c# et Angular et j\'ai donc commencer à apprécier Angular.', NULL, 0),
+(4, 'BourseApp', 'BourseApp est une application boursière qui affiche sous forme de graphe des données liés à la crypto-monnaie.', '2024-04-20 12:29:06', 'bourse.png', 'https://github.com/Rafiklatrikdu69/app-nest', 'Le But de ce projet été de découvrir le framework NestJS avec Angular.', NULL, 0),
+(5, 'Nas\'Info', 'Nas\'Info est un site web qui affiche les articles que la Nasa publie régulierement.', '2024-04-20 12:29:06', 'nasa.png', 'https://github.com/Rafiklatrikdu69/NasaInfo', 'Ce projet m\'a permis de m\'ameliorer sur l\'utilisation des API avec les services Angular.', NULL, 0),
+(6, 'Portfolio', 'Mon portfolio détaille les raisons ayant motivé mon choix de carrière dans le domaine de l\'informatique, illustrant mes passions et mes objectifs professionnels.', '2024-04-20 12:29:06', 'porfoliot.png', 'https://github.com/Rafiklatrikdu69/portfolio', 'Ce projet personnel m\'a permis d\'en apprendre un peu plus sur les composants Angular.', NULL, 0),
+(7, 'ShopLink', 'ShopLink est un site web permettant de commander des produits frais que l\'on retrouve dans les plus grands magazins.', '2024-04-20 12:29:06', 'shoplink.png', 'https://github.com/Rafiklatrikdu69/ShopLink', 'Ce projet personnel à été pour une découverte du framework Symfony.', NULL, 0),
+(8, 'GraphMap', 'GraphMap est une application permettant aux dispensaires d\'hopital de trouver le meilleur trajet pour accompagner les patients en prenant en compte la dangerosité du trajet.', '2024-04-20 12:29:06', 'graphmap.png', 'https://github.com/Rafiklatrikdu69/GraphMap', 'Ce Projet Universitaire à été réaliser en binome, dans ce projet je suis occuper principalement de l\'IHM avec Swing mais aussi des algorithmes de parcours de graphe.', NULL, 0),
+(9, 'Annuaire Client', 'Ce projet Universitaire à pour but de traiter une annuaire de client ,permettant , de rechercher,filtrer ,supprimer des clients avec la programmation en C.', '2024-05-26 12:55:19', 'annuaire.png', 'https://forge.univ-lyon1.fr/p2200950/sae-c', ' ', NULL, 1),
+(10, 'Base de données pour un Grossiste', 'une grossiste spécialisé dans la vente en gros de fleurs, souhaite mettre en place une application pour gérer ses opérations de vente et de distribution. L\'objectif est de simplifier la gestion des stocks, des commandes avec  base de données SQL.', '2024-05-26 13:29:47', 'grossisteprojet.png', '', '', NULL, 1),
+(11, 'Adventure Works', 'Ce projet Universitaire  avait pour but d\'apprendre à visualiser des données d\'une grande entreprise afin de prendre les bonnes décisions pour vendre des produits.', '2024-05-26 16:09:00', 'power.png', '', '', NULL, 1),
+(12, 'Comparaison algorithmique', 'Ce projet universitaire consiste à corriger des algorithmes de tris et à les ameliorer puis de calculer leurs complexité en mémoire.', '2024-05-26 16:12:16', 'projetalgo.png', '', '', NULL, 1),
+(14, 'Certif\'S', 'Certif\'S est un projet que j\'ai réaliser lors de mon stage pour découvrir la technologie Salesforce.', '2024-06-06 20:46:37', 'projetSales.png', 'https://github.com/Rafiklatrikdu69/certifs', '', NULL, 0);
 
 -- --------------------------------------------------------
 
@@ -288,7 +295,8 @@ INSERT INTO `projet_techno` (`techno_id`, `projet_id`) VALUES
 (31, 7),
 (31, 8),
 (32, 2),
-(33, 11);
+(33, 11),
+(34, 14);
 
 -- --------------------------------------------------------
 
@@ -360,7 +368,8 @@ INSERT INTO `technology` (`id_techno`, `nom_techno`, `image_techno`, `categorieI
 (30, 'Swagger', 'swagger.png', 2),
 (31, 'GitHub', 'github.png', 2),
 (32, 'GitLab', 'gitlab.png', 2),
-(33, 'Power BI', 'powerbi.png', 4);
+(33, 'Power BI', 'powerbi.png', 4),
+(34, 'Salesforce', 'sales.png', 1);
 
 --
 -- Index pour les tables déchargées
@@ -430,7 +439,7 @@ ALTER TABLE `technology`
 -- AUTO_INCREMENT pour la table `apprentissage_critique`
 --
 ALTER TABLE `apprentissage_critique`
-  MODIFY `id_apprentissage` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id_apprentissage` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT pour la table `categorie`
@@ -442,7 +451,7 @@ ALTER TABLE `categorie`
 -- AUTO_INCREMENT pour la table `competence`
 --
 ALTER TABLE `competence`
-  MODIFY `id_competence` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_competence` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT pour la table `niveau`
@@ -454,7 +463,7 @@ ALTER TABLE `niveau`
 -- AUTO_INCREMENT pour la table `projet`
 --
 ALTER TABLE `projet`
-  MODIFY `id_projet` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_projet` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT pour la table `semestre`
@@ -466,7 +475,7 @@ ALTER TABLE `semestre`
 -- AUTO_INCREMENT pour la table `technology`
 --
 ALTER TABLE `technology`
-  MODIFY `id_techno` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id_techno` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- Contraintes pour les tables déchargées

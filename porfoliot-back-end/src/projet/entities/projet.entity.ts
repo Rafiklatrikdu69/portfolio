@@ -38,4 +38,6 @@ export class Projet {
   @ManyToOne(() => Competence, (competence: Competence) => competence.projet)
   @JoinColumn({name: 'projet_id'})
   projetCompetence:Competence;
+  @Column()
+  universitaire:boolean;
 }

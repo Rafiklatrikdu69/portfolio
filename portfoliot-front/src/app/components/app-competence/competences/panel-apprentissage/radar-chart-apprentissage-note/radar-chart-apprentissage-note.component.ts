@@ -43,6 +43,12 @@ export class RadarChartApprentissageNoteComponent implements AfterViewInit, OnDe
         },
         options: {
           aspectRatio: 2,
+          scales: {
+            r: {
+                min: 0, // Set the minimum value
+                max: 10 // Set the maximum value
+            }
+        },
           plugins: {
             title: {
                 display: true,

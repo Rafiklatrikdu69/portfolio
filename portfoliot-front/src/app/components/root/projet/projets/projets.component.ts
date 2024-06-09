@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ApiProjetService } from '../../../../services/api-projet.service';
 import { Projet } from '../../../../entity/projet';
 import { CommonModule } from '@angular/common';
@@ -16,8 +16,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./projets.component.css']
 })
 export class ProjetsComponent{
+  api = inject(ApiProjetService)
   projet: Projet[] =[];
   projets$ :  Promise<Projet[]> = this.api.getAllProjets();//Angular s'occupe de recuperer les données.
-  constructor(private api: ApiProjetService,private router :Router) {}
  
 }

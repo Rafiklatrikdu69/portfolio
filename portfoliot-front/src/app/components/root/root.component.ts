@@ -8,6 +8,7 @@ import { ApitechnosService } from '../../services/apitechnos.service';
 import { ApiProjetService } from '../../services/api-projet.service';
 import { FooterComponent } from '../footer/footer.component';
 import { AppCompetenceComponent } from '../app-competence/app-competence.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 
 @Component({
@@ -26,7 +27,8 @@ import { AppCompetenceComponent } from '../app-competence/app-competence.compone
     HomeComponent,
     TechnologiesComponent,
     FooterComponent,
-    AppCompetenceComponent
+    AppCompetenceComponent,
+    ExperienceComponent
   ],
   templateUrl: './root.component.html',
   styleUrl: './root.component.css'

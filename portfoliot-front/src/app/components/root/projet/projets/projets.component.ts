@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { ApiProjetService } from '../../../../services/api-projet.service';
-import { Projet } from '../../../../entity/projet';
+import { Projet } from '../../../../entity/projet.model';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { CardProjetComponent } from '../../../card-projet/card-projet.component';

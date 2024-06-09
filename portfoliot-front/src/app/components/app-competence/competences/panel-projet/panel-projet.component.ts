@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CardProjetComponent } from '../../../card-projet/card-projet.component';
 import { PanelTechnosComponent } from '../panel-technos/panel-technos.component';
-import { Projet } from '../../../../entity/projet';
+import { Projet } from '../../../../entity/projet.model';
 import { CommonModule } from '@angular/common';
 
 @Component({

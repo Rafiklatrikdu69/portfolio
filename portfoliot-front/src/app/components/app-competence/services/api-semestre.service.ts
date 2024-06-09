@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable, Subject, lastValueFrom } from 'rxjs';
-import { Semestre } from '../../../entity/Semestre';
+import { Semestre } from '../../../entity/Semestre.model';
 import { environment } from '../../../../environments/environment';
 
 

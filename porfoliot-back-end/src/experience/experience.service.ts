@@ -13,7 +13,11 @@ export class ExperienceService {
   }
 
   findAll() {
-    return this.repoExperience.find({});;
+    return this.repoExperience.find({
+      order:{
+        date_experience:"DESC"
+      }
+    });;
   }
 
   findOne(id: number) {

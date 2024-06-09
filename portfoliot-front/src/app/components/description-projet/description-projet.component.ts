@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ApiProjetService } from '../../services/api-projet.service';
-import { Projet } from '../../entity/projet';
+import { Projet } from '../../entity/projet.model';
 import { Observable } from 'rxjs';
 import { CardProjetComponent } from '../card-projet/card-projet.component';
 import { CommonModule } from '@angular/common';

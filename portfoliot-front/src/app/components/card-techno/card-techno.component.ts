@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Technology } from '../../entity/Technology';
+import { Technology } from '../../entity/Technology.model';
 import { ImageTechnoComponent } from './image-techno/image-techno.component';
 import { NomTechnoComponent } from './nom-techno/nom-techno.component';
 

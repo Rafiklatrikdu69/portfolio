@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : mysql_db
--- Généré le : jeu. 06 juin 2024 à 21:01
+-- Généré le : dim. 09 juin 2024 à 18:10
 -- Version du serveur : 8.4.0
 -- Version de PHP : 8.2.19
 
@@ -166,6 +166,31 @@ INSERT INTO `competence` (`id_competence`, `nom_competence`, `id_semestre`, `des
 (13, 'Competence 6', 2, 'Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.', 13, NULL),
 (15, 'Competence 1', 4, 'Développement d\'une application', 14, 1),
 (16, 'Stage', 4, '', 16, 14);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `experience`
+--
+
+CREATE TABLE `experience` (
+  `id_experience` int NOT NULL,
+  `nom_experience` varchar(255) NOT NULL,
+  `desc_experience` varchar(500) NOT NULL,
+  `date_experience` date DEFAULT NULL,
+  `scolaire` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `experience`
+--
+
+INSERT INTO `experience` (`id_experience`, `nom_experience`, `desc_experience`, `date_experience`, `scolaire`) VALUES
+(1, 'Intérim Chez ID Logistics', 'Situer à villette d\'Anthon je travaille pendant les petites et grandes vacances en tant que manutentionnaire(déchargement de conteneur, roulage, cerclage, filmage de palette).', '2021-06-27', 0),
+(2, 'Stage chez CGI ', 'J\'ai effectuer un stage de 2 mois chez CGI pour apprendre l\'environnement Salesforce et découvrir le monde du travail.', '2023-04-15', 0),
+(3, 'Stage de 3 éme', 'Ce Stage à été pour moi une révélation c\'est à ce moment la que j\'ai commencer a m\'intéresser à l\'informatique.', '2020-05-01', 0),
+(5, 'BAC Technologique au lycée la pléiade', 'Obtention du BAC Technologique avec mention', '2020-06-30', 1),
+(6, 'BUT Informatique', 'Actuellement en 2éme année de BUT.', '2025-07-01', 1);
 
 -- --------------------------------------------------------
 
@@ -398,6 +423,12 @@ ALTER TABLE `competence`
   ADD KEY `FK_8d97c88950578df20f698634c03` (`projetIdProjet`);
 
 --
+-- Index pour la table `experience`
+--
+ALTER TABLE `experience`
+  ADD PRIMARY KEY (`id_experience`);
+
+--
 -- Index pour la table `niveau`
 --
 ALTER TABLE `niveau`
@@ -452,6 +483,12 @@ ALTER TABLE `categorie`
 --
 ALTER TABLE `competence`
   MODIFY `id_competence` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT pour la table `experience`
+--
+ALTER TABLE `experience`
+  MODIFY `id_experience` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `niveau`

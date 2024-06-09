@@ -1,5 +1,5 @@
-import { Categorie } from "./Categorie";
-import { Technology } from "./Technology";
+import { Categorie } from "./Categorie.model";
+import { Technology } from "./Technology.model";
 
 export class Projet {
     date: string;

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import {  lastValueFrom } from 'rxjs';
-import { Projet } from '../entity/projet';
+import { Projet } from '../entity/projet.model';
 import { environment } from '../../environments/environment';
 
 

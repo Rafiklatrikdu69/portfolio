@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ApitechnosService } from '../../../../services/apitechnos.service';
 
-import { Categorie } from '../../../../entity/Categorie';
+import { Categorie } from '../../../../entity/Categorie.model';
 import { CommonModule } from '@angular/common';
 import { CategorieTechnoCardComponent } from './categorie-techno-card/categorie-techno-card.component';
 import { Observable } from 'rxjs';

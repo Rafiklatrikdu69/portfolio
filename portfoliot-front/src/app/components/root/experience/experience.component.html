@@ -1,13 +1,12 @@
-<h1>Mon Expérience</h1>
-<section class="flex-experience">
-  <div class="timeline">
-    <div *ngFor="let item of experience | async; index as i"
-        [ngClass]="(i % 2 === 0) ? 'container left' : 'container right'">
-      <div class="content">
-        <h2>{{ item.nom_experience }}</h2>
-        <p>{{ item.desc_experience }}</p>
-      </div>
-    </div>
-  </div>
-  
+
+<section id="exp">
+  <experience-pro 
+  *ngIf="experiences | async as experiences" 
+  [experiences]="experiences  | filterExperience: false" appStyleExperience>
+</experience-pro>
+<experience-scolaire 
+  *ngIf="experiences | async as experiences"  
+  [experienceS]="experiences | filterExperience: true" appStyleExperience>
+</experience-scolaire>
+
 </section>

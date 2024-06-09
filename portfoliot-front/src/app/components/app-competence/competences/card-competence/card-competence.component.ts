@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Competence } from '../../../../entity/Competence';
+import { Competence } from '../../../../entity/Competence.model';
 import { CommonModule } from '@angular/common';
 
 import { PanelProjetComponent } from '../panel-projet/panel-projet.component';

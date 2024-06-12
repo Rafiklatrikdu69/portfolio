@@ -9,6 +9,7 @@ import { ApiProjetService } from '../../services/api-projet.service';
 import { FooterComponent } from '../footer/footer.component';
 import { AppCompetenceComponent } from '../app-competence/app-competence.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -17,10 +18,12 @@ import { ExperienceComponent } from './experience/experience.component';
   providers: 
   [
     ApiProjetService,
-    ApitechnosService
+    ApitechnosService,
   ],
   imports: 
   [
+    RouterOutlet,
+    RouterModule,
     NavComponent,
     AboutComponent,
     ProjetsComponent,
@@ -28,8 +31,9 @@ import { ExperienceComponent } from './experience/experience.component';
     TechnologiesComponent,
     FooterComponent,
     AppCompetenceComponent,
-    ExperienceComponent
+    ExperienceComponent,
   ],
+
   templateUrl: './root.component.html',
   styleUrl: './root.component.css'
 })

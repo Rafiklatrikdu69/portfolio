@@ -13,7 +13,7 @@ export class ApiExperienceService {
   async getExperience(): Promise<Experience[] | undefined>{
    
     try {
-      const result = await lastValueFrom(this.http.get<Experience[]>(`${this.apiUrl}experience`))
+      const result = await lastValueFrom(this.http.get<Experience[]>(`${this.apiUrl}/experience`))
       return result
     }
     catch (err) {

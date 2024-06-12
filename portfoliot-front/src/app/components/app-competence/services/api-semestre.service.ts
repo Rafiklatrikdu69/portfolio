@@ -18,7 +18,7 @@ export class ApiSemestreService {
   http = inject(HttpClient);
   
  async getSemestreById(id:number){
-    let semestre =  await lastValueFrom( this.http.get<Semestre>(this.url +'semestre/'+id));;
+    let semestre =  await lastValueFrom( this.http.get<Semestre>(`${this.url }/semestre/${id}`));;
     if(semestre!=undefined){
       this.competenceSemestre.next(semestre[0]);
       return semestre;

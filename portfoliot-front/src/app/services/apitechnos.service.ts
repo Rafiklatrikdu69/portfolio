@@ -11,6 +11,6 @@ export class ApitechnosService {
   url = environment.apiUrl;
   http = inject(HttpClient);
   public getAlltechnos():Observable<Categorie[]>{
-    return this.http.get<Categorie[]>(this.url+'categorie')
+    return this.http.get<Categorie[]>(`${this.url}/categorie`)
    }
 }

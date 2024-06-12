@@ -12,11 +12,11 @@ export class ApiProjetService {
    url = environment.apiUrl;
    http = inject(HttpClient)
    async getAllProjets(){
-    return  lastValueFrom( this.http.get<Projet[]>(this.url + 'projet/get'));
+    return  lastValueFrom( this.http.get<Projet[]>(`${this.url}/projet/get`));
    }
    async getProjetById(id_projet : number)
    {
-      return lastValueFrom(this.http.get<Projet>(this.url + 'projet/'+ id_projet));
+      return lastValueFrom(this.http.get<Projet>(`${this.url}/projet/${id_projet}`));
    }
 
 }

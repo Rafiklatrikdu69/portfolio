@@ -1,5 +1,4 @@
-import { Competence } from "./Competence";
-import { Niveau } from "./Niveau";
+import { Competence } from "./Competence.model";
 
 export class Semestre {
     id_semestre!:number;

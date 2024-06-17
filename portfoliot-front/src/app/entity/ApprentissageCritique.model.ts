@@ -1,4 +1,4 @@
-import { Niveau } from "./Niveau";
+import { Niveau } from "./Niveau.model";
 
 export class ApprentissageCritique{
     id_apprentissage!: number;

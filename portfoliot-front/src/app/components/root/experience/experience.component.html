@@ -1,0 +1,12 @@
+
+<section id="exp">
+  <experience-pro 
+  *ngIf="experiences | async as experiences" 
+  [experiences]="experiences  | filterExperience: false" appStyleExperience>
+</experience-pro>
+<experience-scolaire 
+  *ngIf="experiences | async as experiences"  
+  [experienceS]="experiences | filterExperience: true" appStyleExperience>
+</experience-scolaire>
+
+</section>

@@ -8,6 +8,8 @@ import { ApitechnosService } from '../../services/apitechnos.service';
 import { ApiProjetService } from '../../services/api-projet.service';
 import { FooterComponent } from '../footer/footer.component';
 import { AppCompetenceComponent } from '../app-competence/app-competence.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 
 @Component({
@@ -16,18 +18,22 @@ import { AppCompetenceComponent } from '../app-competence/app-competence.compone
   providers: 
   [
     ApiProjetService,
-    ApitechnosService
+    ApitechnosService,
   ],
   imports: 
   [
+    RouterOutlet,
+    RouterModule,
     NavComponent,
     AboutComponent,
     ProjetsComponent,
     HomeComponent,
     TechnologiesComponent,
     FooterComponent,
-    AppCompetenceComponent
+    AppCompetenceComponent,
+    ExperienceComponent,
   ],
+
   templateUrl: './root.component.html',
   styleUrl: './root.component.css'
 })

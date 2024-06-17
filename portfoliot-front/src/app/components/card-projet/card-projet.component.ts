@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Projet } from '../../entity/projet';
+import { Projet } from '../../entity/projet.model';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { FlipCardFrontComponent } from './flip-card-front/flip-card-front.component';

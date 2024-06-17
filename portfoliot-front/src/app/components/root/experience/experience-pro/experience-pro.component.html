@@ -1,0 +1,13 @@
+<section class="exp">
+  <h1>Mon Expérience Professionel</h1>
+
+  <div class="timeline">
+    <div *ngFor="let item of experiences; index as i"
+        [ngClass]="(i % 2 === 0) ? 'container left' : 'container right'">
+      <div class="content">
+        <h2>{{ item.nom_experience }}</h2>
+        <p>{{ item.desc_experience }}</p>
+      </div>
+    </div>
+  </div>
+</section>

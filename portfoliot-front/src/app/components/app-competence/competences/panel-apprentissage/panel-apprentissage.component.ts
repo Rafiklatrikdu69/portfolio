@@ -1,7 +1,7 @@
 import { Component, Input, Pipe, PipeTransform } from '@angular/core';
 import { CardApprentissageComponent } from '../card-apprentissage/card-apprentissage.component';
 import { CommonModule } from '@angular/common';
-import { ApprentissageCritique } from '../../../../entity/ApprentissageCritique';
+import { ApprentissageCritique } from '../../../../entity/ApprentissageCritique.model';
 import { RadarChartApprentissageNoteComponent } from './radar-chart-apprentissage-note/radar-chart-apprentissage-note.component';
 
 @Component({

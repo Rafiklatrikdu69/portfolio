@@ -13,7 +13,8 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px;
-
+    justify-content: center;
+    align-items: center;
 }
 
   
@@ -26,10 +27,17 @@ h2{
 }
 
 @media screen and (max-width: 900px) {
+  *{
+    box-sizing: content-box;
+  }
   #projets{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
   .flip-card-back {
     display: none;
   }

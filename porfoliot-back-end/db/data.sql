@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : mysql_db
--- Généré le : jeu. 06 juin 2024 à 21:01
+-- Généré le : dim. 09 juin 2024 à 18:10
 -- Version du serveur : 8.4.0
 -- Version de PHP : 8.2.19
 
@@ -41,10 +41,10 @@ CREATE TABLE `apprentissage_critique` (
 
 INSERT INTO `apprentissage_critique` (`id_apprentissage`, `nom_apprentissage`, `id_niveau`, `description_apprentissage`, `poids_apprentissage`) VALUES
 (1, 'Vérifier la validité des taches', 2, 'Respecter les besoins du client   via le cahier des charges', 8),
-(2, 'Algorithmie', 1, 'Utiliser les des algorithmes adaptés avec les bonnes structures de données.', 8),
+(2, 'Algorithmie', 1, 'Utiliser des algorithmes adaptés avec les bonnes structures de données.', 8),
 (3, 'Tester son code', 1, 'Veiller à la qualité du code avec des tests unitaires,de non régression,etc...', 8),
 (4, 'Utiliser les bonnes resources', 1, 'Choisir les ressources adaptées pour le ou les projets', 6),
-(5, 'Développer efficacement', 1, 'Developper des interfaces accessible par la majorité des utilisateurs', 8),
+(5, 'Développer efficacement', 1, 'Développer des interfaces accessible par la majorité des utilisateurs', 8),
 (6, 'Analyse Algorithmique', 3, 'Analyser un problème avec méthode (découpage en éléments algorithmiques simples, structure de données...)', 4),
 (7, 'Comprehension', 3, 'Comparer des algorithmes pour des problèmes classiques (tris simples, recherche...)', 4),
 (8, 'Traduction algorithmique', 3, 'Formaliser et mettre en œuvre des outils mathématiques pour l’informatique.', 4),
@@ -69,10 +69,10 @@ INSERT INTO `apprentissage_critique` (`id_apprentissage`, `nom_apprentissage`, `
 (27, 'Structure de données avancer', 15, 'J\'ai appris à utiliser des structures de données adapter au besoins pour mon application.', 5),
 (28, 'Sécurité', 1, 'Développer une  application sécuriser et robuste.', 7),
 (29, 'Ecriture d\'algorithme.', 3, 'Ecrire des algorithmes de tris.', 3),
-(30, 'Calcule de compléxité', 3, 'Calculer la complexite d\'un algorithme est déterminer si il est performant ou non.', 4),
+(30, 'Calcule de compléxité', 3, 'Calculer la complexité d\'un algorithme est déterminer si il est performant ou non.', 4),
 (31, 'Capture de trames https', 4, 'Capturer des trames http pour les analyser.', 6),
 (32, 'Rédaction du travail ', 4, 'Rédaction d\'une notice explicative du projet', 7),
-(33, 'Rédiger un rapport ', 8, 'Rédaction d\'un rapport avec le MCD,MLD , les problémes rencontrer.', 5),
+(33, 'Rédiger un rapport ', 8, 'Rédaction d\'un rapport avec le MCD,MLD , les problémes rencontrés.', 5),
 (34, 'SQL', 8, 'Comprendre le langage SQL', 8),
 (35, 'Analyse de la base de données', 8, 'Savoir analyser une base données existante et la remplir avec un jeu de données.', 5),
 (36, 'HTML,CSS', 7, 'Savoir utiliser les langages de base pour un site web.', 9),
@@ -166,6 +166,31 @@ INSERT INTO `competence` (`id_competence`, `nom_competence`, `id_semestre`, `des
 (13, 'Competence 6', 2, 'Acquérir, développer et exploiter les aptitudes nécessaires pour travailler efficacement dans une équipe informatique.', 13, NULL),
 (15, 'Competence 1', 4, 'Développement d\'une application', 14, 1),
 (16, 'Stage', 4, '', 16, 14);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `experience`
+--
+
+CREATE TABLE `experience` (
+  `id_experience` int NOT NULL,
+  `nom_experience` varchar(255) NOT NULL,
+  `desc_experience` varchar(500) NOT NULL,
+  `date_experience` date DEFAULT NULL,
+  `scolaire` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `experience`
+--
+
+INSERT INTO `experience` (`id_experience`, `nom_experience`, `desc_experience`, `date_experience`, `scolaire`) VALUES
+(1, 'Intérim Chez ID Logistics', 'Situer à villette d\'Anthon je travaille pendant les petites et grandes vacances en tant que manutentionnaire(déchargement de conteneur, roulage, cerclage, filmage de palette).', '2021-06-27', 0),
+(2, 'Stage chez CGI ', 'J\'ai effectuer un stage de 2 mois chez CGI pour apprendre l\'environnement Salesforce et découvrir le monde du travail.', '2023-04-15', 0),
+(3, 'Stage de 3 éme', 'Ce Stage à été pour moi une révélation c\'est à ce moment la que j\'ai commencer a m\'intéresser à l\'informatique.', '2020-05-01', 0),
+(5, 'BAC Technologique au lycée la pléiade', 'Obtention du BAC Technologique avec mention', '2020-06-30', 1),
+(6, 'BUT Informatique', 'Actuellement en 2éme année de BUT.', '2025-07-01', 1);
 
 -- --------------------------------------------------------
 
@@ -398,6 +423,12 @@ ALTER TABLE `competence`
   ADD KEY `FK_8d97c88950578df20f698634c03` (`projetIdProjet`);
 
 --
+-- Index pour la table `experience`
+--
+ALTER TABLE `experience`
+  ADD PRIMARY KEY (`id_experience`);
+
+--
 -- Index pour la table `niveau`
 --
 ALTER TABLE `niveau`
@@ -452,6 +483,12 @@ ALTER TABLE `categorie`
 --
 ALTER TABLE `competence`
   MODIFY `id_competence` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT pour la table `experience`
+--
+ALTER TABLE `experience`
+  MODIFY `id_experience` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `niveau`

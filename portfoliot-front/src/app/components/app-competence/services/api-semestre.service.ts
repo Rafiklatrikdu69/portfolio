@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { Observable, Subject, lastValueFrom } from 'rxjs';
-import { Semestre } from '../../../entity/Semestre';
+import { Semestre } from '../../../entity/Semestre.model';
 import { environment } from '../../../../environments/environment';
 
 
@@ -15,10 +15,10 @@ export class ApiSemestreService {
   url = environment.apiUrl;
   private competenceSemestre = new Subject<Semestre>();
   private ObsSemestre = this.competenceSemestre.asObservable();
-  constructor(private http:HttpClient) {}
+  http = inject(HttpClient);
   
  async getSemestreById(id:number){
-    let semestre =  await lastValueFrom( this.http.get<Semestre>(this.url +'semestre/'+id));;
+    let semestre =  await lastValueFrom( this.http.get<Semestre>(`${this.url }/semestre/${id}`));;
     if(semestre!=undefined){
       this.competenceSemestre.next(semestre[0]);
       return semestre;

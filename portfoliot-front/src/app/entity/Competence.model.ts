@@ -1,5 +1,5 @@
-import { Niveau } from "./Niveau";
-import { Projet } from "./projet";
+import { Niveau } from "./Niveau.model";
+import { Projet } from "./projet.model";
 
 export class Competence{
     id_competence!:number;

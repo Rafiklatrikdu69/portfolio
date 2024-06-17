@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Categorie } from '../../../../../entity/Categorie';
+import { Categorie } from '../../../../../entity/Categorie.model';
 import { CommonModule } from '@angular/common';
 import { CardTechnoComponent } from '../../../../card-techno/card-techno.component';
 import { NomCategorieComponent } from './nom-categorie/nom-categorie.component';

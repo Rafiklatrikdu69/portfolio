@@ -17,6 +17,8 @@ import { NiveauModule } from './niveau/niveau.module';
 import { Niveau } from './niveau/entities/niveau.entity';
 import { ApprentissageCritiqueModule } from './apprentissage-critique/apprentissage-critique.module';
 import { ApprentissageCritique } from './apprentissage-critique/entities/apprentissage-critique.entity';
+import { ExperienceModule } from './experience/experience.module';
+import { Experience } from './experience/entities/experience.entity';
 
 @Module({
   imports: [
@@ -35,7 +37,8 @@ import { ApprentissageCritique } from './apprentissage-critique/entities/apprent
         Competence,
         Semestre,
         Niveau,
-        ApprentissageCritique
+        ApprentissageCritique,
+        Experience
       ],
       autoLoadEntities: true,
       synchronize:true
@@ -47,7 +50,8 @@ import { ApprentissageCritique } from './apprentissage-critique/entities/apprent
     CompetenceModule,
     SemestreModule,
     NiveauModule,
-    ApprentissageCritiqueModule
+    ApprentissageCritiqueModule,
+    ExperienceModule
   ],
   controllers: [AppController],
   providers: [AppService],

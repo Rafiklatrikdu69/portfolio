@@ -1,4 +1,4 @@
-import { Technology } from "./Technology";
+import { Technology } from "./Technology.model";
 
 export class Categorie{
     id_cat:number;

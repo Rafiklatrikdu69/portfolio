@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 import { Store, provideStore } from '@ngrx/store';
 import { AppState, appEffects, appStore } from '../../../../../store/store';
 import * as ProjetActions from '../../../../../store/actions';
-import  {selectProjet} from '../../../../../store/selectors';
+import  {selectProjets} from '../../../../../store/selectors';
 import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-projets',
@@ -23,7 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
 export class ProjetsComponent{
   api = inject(ApiProjetService)
   store = inject(Store<AppState>)
-  projets$ :  Observable<Projet[]> = this.store.select(selectProjet);
+  projets$ :  Observable<Projet[]> = this.store.select(selectProjets);
  constructor(){
   this.store.dispatch(ProjetActions.loadProjet());
  }

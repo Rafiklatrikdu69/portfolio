@@ -1,4 +1,4 @@
-import { Injectable, inject } from "@angular/core";
+import { Injectable, inject, numberAttribute } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { catchError, from, map, mergeMap, of } from "rxjs";
 import { ApiProjetService } from "../app/services/api-projet.service";
@@ -13,7 +13,7 @@ export class Projeteffect {
       ofType(ProjetActions.loadProjet),
       mergeMap(() =>   
         from(this.ProjetService.getAllProjets()).pipe(
-            map((projet : Projet[]) => ProjetActions.loadProjetSuccess({ projet })),
+            map((projets : Projet[]) => ProjetActions.loadProjetSuccess({ projets })),
             catchError((error) =>
               of(ProjetActions.loadProjetFailure({ error: error.message }))
             )
@@ -21,4 +21,17 @@ export class Projeteffect {
       )
     )
   );
+//   loadProjetById$ = createEffect(() =>
+//     this.actions$.pipe(
+//       ofType(ProjetActions.loadProjetById),
+//       mergeMap((projet) =>   
+//         from(this.ProjetService.getProjetById(projet.id)).pipe(
+//             map((projet : Projet) => ProjetActions.loadProjetSuccessById({ projet })),
+//             catchError((error) =>
+//               of(ProjetActions.loadProjetFailure({ error: error.message }))
+//             )
+//           )
+//       )
+//     )
+//   );
 }

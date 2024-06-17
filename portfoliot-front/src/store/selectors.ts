@@ -1,17 +1,20 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
-import { ProjetState, TechnoState } from "./app.state";
+import { ProjetState, TechnosState } from "./app.state";
 
 const selectAppState = createFeatureSelector<ProjetState>('projet');
-const selectAppStateTechnos = createFeatureSelector<TechnoState>('technos');
+const selectAppStateTechnos = createFeatureSelector<TechnosState>('technos');
 
 
 
-export const selectProjet = createSelector(
+export const selectProjets = createSelector(
   selectAppState,
-  (state: ProjetState) => state.projet
+  (state: ProjetState) => state.projets
 );
-
+export const selectProjet = createSelector(
+    selectAppState,
+    (state: ProjetState) => state.projets
+  );
 export const selectTechnos = createSelector(
     selectAppStateTechnos,
-    (state: TechnoState) => state.technos
+    (state: TechnosState) => state.technos
   );

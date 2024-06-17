@@ -1,14 +1,14 @@
 import { createReducer, on } from "@ngrx/store";
 import { Projet } from "../app/entity/projet.model";
 import * as Actions from './actions';
-import { ProjetState, TechnoState } from "./app.state";
+import { ProjetState, TechnosState } from "./app.state";
 
     export const initialState: ProjetState = {
-        projet: [],
+        projets: [],
         loading: false,
         error: ''
         };
-        export const initialStateTechno: TechnoState = {
+        export const initialStateTechno: TechnosState = {
             technos: [],
             loading: false,
             error: ''
@@ -18,9 +18,11 @@ import { ProjetState, TechnoState } from "./app.state";
         
         on(Actions.loadProjet, state => ({ ...state, loading: true })),
         
-        on(Actions.loadProjetSuccess, (state, { projet }) =>({ ...state, projet, loading: false })),
+        on(Actions.loadProjetSuccess, (state, { projets }) =>({ ...state, projets, loading: false })),
         
         on(Actions.loadProjetFailure, (state, { error }) => ({ ...state, error, loading: false })),
+        // on(Actions.loadProjetById, (state, { id }) =>({ ...state, id, loading: false })),
+
     )        
 
     export const TechnoReducer = createReducer(
@@ -31,4 +33,5 @@ import { ProjetState, TechnoState } from "./app.state";
         on(Actions.loadTechnosSuccess, (state, { technos }) =>({ ...state, technos, loading: false })),
         
         on(Actions.loadTechnosFailure, (state, { error }) => ({ ...state, error, loading: false })),
+        
     )  
